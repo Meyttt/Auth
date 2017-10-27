@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="generated.SessionsEntity" table="sessions" schema="public" catalog="auth">
+        <id name="id">
+            <column name="id" sql-type="bigint"/>
+        </id>
+        <property name="userId">
+            <column name="user_id" sql-type="bigint" unique="true"/>
+        </property>
+        <property name="accessToken">
+            <column name="access_token" sql-type="generated.TokensEntity" not-null="true"/>
+        </property>
+        <property name="refreshToken">
+            <column name="refresh_token" sql-type="generated.TokensEntity" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>
