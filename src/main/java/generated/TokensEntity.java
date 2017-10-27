@@ -28,7 +28,7 @@ public class TokensEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id", nullable = false, insertable = false)
+    @Column(name = "id", nullable = false, insertable = false, updatable = false)
     public Long getId() {
         return id;
     }
@@ -38,7 +38,7 @@ public class TokensEntity {
     }
 
     @Basic
-    @Column(name = "value", nullable = false, insertable = false)
+    @Column(name = "value", nullable = false, insertable = false, updatable = false)
     public UUID getValue() {
         return value;
     }

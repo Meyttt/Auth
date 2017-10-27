@@ -41,6 +41,8 @@ public class AuthOperator {
     private Answer generateAnswer(SessionsEntity sessionsEntity){
         if (sessionsEntity!=null&&sessionsEntity.getUserId()!=null){
             Date date = new Date();
+            TokensEntity oldRefr=sessionsEntity.getRefreshToken();
+            TokensEntity olAcc=sessionsEntity.getAccessToken();
             TokensEntity accessToken= new TokensEntity(changeDateHour(date,1));
             saveOb(accessToken);
             accessToken=DBClient.refresh(accessToken);
@@ -52,6 +54,8 @@ public class AuthOperator {
             sessionsEntity.setAccessToken(accessToken);
             sessionsEntity.setRefreshToken(refreshToken);
             updateObject(sessionsEntity);
+            delete(olAcc);
+            delete(oldRefr);
             return new Answer(new Token(accessToken),new Token(refreshToken),null);
         }
         return new Answer(null,null,"Пользователь не найден.");
