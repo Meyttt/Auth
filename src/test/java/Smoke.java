@@ -32,8 +32,15 @@ public class Smoke {
 
         Answer answer4=authOperator.logout(userId);
         Assert.assertTrue(answer4.getError()==null);
+    }
 
+    @Test
+    public void cascadeDelete(){
+        Random random= new Random();
+        Long userId= random.nextLong();
 
+        AuthOperator authOperator= new AuthOperator();
+        Answer answer=authOperator.makeToken(userId);
 
     }
 }

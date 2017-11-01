@@ -14,5 +14,17 @@
         <property name="expiredDate">
             <column name="expired_date" sql-type="timestamp" not-null="true"/>
         </property>
+        <set name="sessionsById" inverse="true">
+            <key>
+                <column name="access_token" not-null="true"/>
+            </key>
+            <one-to-many not-found="ignore" class="generated.SessionsEntity"/>
+        </set>
+        <set name="sessionsById_0" inverse="true">
+            <key>
+                <column name="refresh_token" not-null="true"/>
+            </key>
+            <one-to-many not-found="ignore" class="generated.SessionsEntity"/>
+        </set>
     </class>
 </hibernate-mapping>

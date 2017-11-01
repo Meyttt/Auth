@@ -1,6 +1,11 @@
 package generated;
 
+import org.hibernate.annotations.*;
+import org.hibernate.annotations.CascadeType;
+
 import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.Table;
 import java.io.Serializable;
 import java.sql.Timestamp;
 import java.util.Collection;
@@ -16,8 +21,8 @@ public class TokensEntity {
     private Long id;
     private UUID value;
     private Timestamp expiredDate;
-   /* private Collection<SessionsEntity> sessionsById;
-    private Collection<SessionsEntity> sessionsById_0;*/
+    private Collection<SessionsEntity> sessionsById;
+    private Collection<SessionsEntity> sessionsById_0;
 
     public TokensEntity(Date date) {
         this.expiredDate=new Timestamp(date.getTime());
@@ -79,7 +84,7 @@ public class TokensEntity {
         return result;
     }
 
-   /* @OneToMany(mappedBy = "tokensByAccessToken")
+    @OneToMany(mappedBy = "refreshToken")
     public Collection<SessionsEntity> getSessionsById() {
         return sessionsById;
     }
@@ -88,7 +93,7 @@ public class TokensEntity {
         this.sessionsById = sessionsById;
     }
 
-    @OneToMany(mappedBy = "tokensByRefreshToken")
+    @OneToMany(mappedBy = "accessToken")
     public Collection<SessionsEntity> getSessionsById_0() {
         return sessionsById_0;
     }
@@ -96,5 +101,4 @@ public class TokensEntity {
     public void setSessionsById_0(Collection<SessionsEntity> sessionsById_0) {
         this.sessionsById_0 = sessionsById_0;
     }
-*/
 }
