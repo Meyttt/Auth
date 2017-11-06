@@ -6,7 +6,12 @@
 
     <groupId>Auth</groupId>
     <artifactId>Auth</artifactId>
+    <packaging>pom</packaging>
     <version>1</version>
+    <modules>
+        <module>server</module>
+        <module>client</module>
+    </modules>
 
     <properties>
         <hibernate-version>5.0.1.Final</hibernate-version>

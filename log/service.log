@@ -18639,3 +18639,35 @@
 2017-11-06 12:49:59 INFO  - Third access token:fd106c91-b63c-476d-afa6-1388f98bb476
 2017-11-06 12:49:59 INFO  - Third refresh token:88a95ef6-5b17-41ab-8a55-9bf109cb9c56
 2017-11-06 12:49:59 WARN  - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2017-11-06 22:59:07 INFO  - HHH000412: Hibernate Core {5.2.11.Final}
+2017-11-06 22:59:07 INFO  - HHH000206: hibernate.properties not found
+2017-11-06 22:59:08 INFO  - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-06 22:59:09 WARN  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-06 22:59:09 INFO  - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/auth]
+2017-11-06 22:59:09 INFO  - HHH10001001: Connection properties: {user=postgres, password=****}
+2017-11-06 22:59:09 INFO  - HHH10001003: Autocommit mode: false
+2017-11-06 22:59:09 INFO  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-06 23:00:39 INFO  - HHH000412: Hibernate Core {5.2.11.Final}
+2017-11-06 23:00:39 INFO  - HHH000206: hibernate.properties not found
+2017-11-06 23:00:40 INFO  - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-06 23:00:41 WARN  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-06 23:00:41 INFO  - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/auth]
+2017-11-06 23:00:41 INFO  - HHH10001001: Connection properties: {user=postgres, password=****}
+2017-11-06 23:00:41 INFO  - HHH10001003: Autocommit mode: false
+2017-11-06 23:00:41 INFO  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-06 23:00:41 INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2017-11-06 23:00:42 INFO  - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-11-06 23:00:42 INFO  - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@7ac98b8d
+2017-11-06 23:00:43 WARN  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-06 23:00:43 INFO  - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/auth]
+2017-11-06 23:00:43 INFO  - HHH10001001: Connection properties: {user=postgres, password=****}
+2017-11-06 23:00:43 INFO  - HHH10001003: Autocommit mode: false
+2017-11-06 23:00:43 INFO  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-06 23:00:43 INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2017-11-06 23:00:43 INFO  - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-11-06 23:00:43 INFO  - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@7ac98b8d
+2017-11-06 23:00:43 WARN  - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2017-11-06 23:00:43 WARN  - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2017-11-06 23:00:43 WARN  - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2017-11-06 23:00:43 WARN  - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2017-11-06 23:00:43 WARN  - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
