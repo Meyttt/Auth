@@ -6,7 +6,7 @@
 
     <groupId>Auth</groupId>
     <artifactId>Auth</artifactId>
-    <version>0.01</version>
+    <version>1</version>
 
     <properties>
         <hibernate-version>5.0.1.Final</hibernate-version>

@@ -1,0 +1,1 @@
+wsimport -keep -verbose http://localhost:9999/ws/auth?wsdl -d ./target/classes/ -p output -s ./src/main/java

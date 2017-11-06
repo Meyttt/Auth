@@ -1,8 +1,11 @@
-import database.Answer;
-import database.Token;
-import database.AuthOperator;
+
+
+import org.apache.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import output.Answer;
+import output.AuthImpl;
+import output.AuthImplService;
 
 import java.util.Random;
 
@@ -12,35 +15,36 @@ import java.util.Random;
  */
 public class Smoke {
     @Test
-    public void fillCircle(){
+    public void testClient(){
+        Logger logger = Logger.getLogger(Smoke.class);
         Random random = new Random();
-        Long userId = random.nextLong();
+        Long userId=Long.valueOf(random.nextLong());
+        AuthImplService authImplService = new AuthImplService();
+        AuthImpl authImpl = authImplService.getAuthImplPort();
+        Answer answer=authImpl.makeToken(userId);
 
-        AuthOperator authOperator = new AuthOperator();
-        Answer answer=authOperator.makeToken(userId);
         Assert.assertTrue(answer.getError()==null);
+        Assert.assertTrue(answer.getAccessToken()!=null);
+        Assert.assertTrue(answer.getRefreshToken()!=null);
+        logger.info("First access token:"+answer.getAccessToken().getUuid());
+        logger.info("First refresh token:"+answer.getRefreshToken().getUuid());
+        Answer authAnswer=authImpl.auth(answer.getAccessToken().getUuid().toString());
+        Assert.assertTrue(authAnswer.getError()==null);
+        Assert.assertTrue(authAnswer.getAccessToken()!=null);
+        Assert.assertTrue(authAnswer.getRefreshToken()!=null);
+        logger.info("Second access token:"+authAnswer.getAccessToken().getUuid());
+        logger.info("Second refresh token:"+authAnswer.getRefreshToken().getUuid());
+        Answer refreshAnswer=authImpl.refresh(authAnswer.getRefreshToken().getUuid().toString());
+        Assert.assertTrue(refreshAnswer.getError()==null);
+        Assert.assertTrue(refreshAnswer.getAccessToken()!=null);
+        Assert.assertTrue(refreshAnswer.getRefreshToken()!=null);
+        logger.info("Third access token:"+refreshAnswer.getAccessToken().getUuid());
+        logger.info("Third refresh token:"+refreshAnswer.getRefreshToken().getUuid());
+        Answer logoutAnswer = authImpl.logout(userId);
+        Assert.assertTrue(logoutAnswer.getError()==null);
+        Assert.assertTrue(logoutAnswer.getAccessToken()==null);
+        Assert.assertTrue(logoutAnswer.getRefreshToken()==null);
 
-        Answer answer2=authOperator.refresh(answer.getRefreshToken().getUuid());
-        Assert.assertTrue(answer2.getError()==null);
-        Assert.assertNotEquals(answer.getAccessToken().getUuid(),answer2.getAccessToken().getUuid());
-        Assert.assertNotEquals(answer.getRefreshToken().getUuid(),answer2.getRefreshToken().getUuid());
-
-        Answer answer3=authOperator.auth(answer2.getAccessToken().getUuid());
-        Assert.assertTrue(answer3.getError()==null);
-        Assert.assertNotEquals(answer2.getAccessToken().getUuid(),answer3.getAccessToken().getUuid());
-        Assert.assertNotEquals(answer2.getRefreshToken().getUuid(),answer3.getRefreshToken().getUuid());
-
-        Answer answer4=authOperator.logout(userId);
-        Assert.assertTrue(answer4.getError()==null);
-    }
-
-    @Test
-    public void cascadeDelete(){
-        Random random= new Random();
-        Long userId= random.nextLong();
-
-        AuthOperator authOperator= new AuthOperator();
-        Answer answer=authOperator.makeToken(userId);
 
     }
 }

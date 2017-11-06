@@ -11,8 +11,6 @@ import org.hibernate.cfg.Configuration;
 import javax.persistence.metamodel.EntityType;
 import javax.persistence.metamodel.Metamodel;
 
-import java.util.Map;
-
 /**
  * Created by Meyttt on 24.10.2017.
  */

@@ -1,4 +1,4 @@
-package database;
+package soap;
 
 import org.apache.log4j.Logger;
 import org.hibernate.Criteria;
@@ -8,7 +8,7 @@ import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.criterion.Restrictions;
 
-import java.util.*;
+import java.util.List;
 
 /**
  * Created by Meyttt on 16.10.2017.

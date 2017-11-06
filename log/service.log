@@ -16801,3 +16801,1841 @@
 2017-10-28 02:02:44 TRACE - binding parameter [1] as [BIGINT] - [221]
 2017-10-28 02:02:44 DEBUG - delete from public.tokens where id=?
 2017-10-28 02:02:44 TRACE - binding parameter [1] as [BIGINT] - [222]
+2017-10-28 12:11:45 INFO  - HHH000412: Hibernate Core {5.2.11.Final}
+2017-10-28 12:11:45 INFO  - HHH000206: hibernate.properties not found
+2017-10-28 12:11:45 INFO  - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-10-28 12:11:47 DEBUG - Adding type registration boolean -> org.hibernate.type.BooleanType@1cf56a1c
+2017-10-28 12:11:47 DEBUG - Adding type registration boolean -> org.hibernate.type.BooleanType@1cf56a1c
+2017-10-28 12:11:47 DEBUG - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@1cf56a1c
+2017-10-28 12:11:47 DEBUG - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@81d9a72
+2017-10-28 12:11:47 DEBUG - Adding type registration true_false -> org.hibernate.type.TrueFalseType@1ebea008
+2017-10-28 12:11:47 DEBUG - Adding type registration yes_no -> org.hibernate.type.YesNoType@163370c2
+2017-10-28 12:11:47 DEBUG - Adding type registration byte -> org.hibernate.type.ByteType@c667f46
+2017-10-28 12:11:47 DEBUG - Adding type registration byte -> org.hibernate.type.ByteType@c667f46
+2017-10-28 12:11:47 DEBUG - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@c667f46
+2017-10-28 12:11:47 DEBUG - Adding type registration character -> org.hibernate.type.CharacterType@456d6c1e
+2017-10-28 12:11:47 DEBUG - Adding type registration char -> org.hibernate.type.CharacterType@456d6c1e
+2017-10-28 12:11:47 DEBUG - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@456d6c1e
+2017-10-28 12:11:47 DEBUG - Adding type registration short -> org.hibernate.type.ShortType@471a9022
+2017-10-28 12:11:47 DEBUG - Adding type registration short -> org.hibernate.type.ShortType@471a9022
+2017-10-28 12:11:47 DEBUG - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@471a9022
+2017-10-28 12:11:47 DEBUG - Adding type registration integer -> org.hibernate.type.IntegerType@4bc222e
+2017-10-28 12:11:47 DEBUG - Adding type registration int -> org.hibernate.type.IntegerType@4bc222e
+2017-10-28 12:11:47 DEBUG - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@4bc222e
+2017-10-28 12:11:47 DEBUG - Adding type registration long -> org.hibernate.type.LongType@34b9f960
+2017-10-28 12:11:47 DEBUG - Adding type registration long -> org.hibernate.type.LongType@34b9f960
+2017-10-28 12:11:47 DEBUG - Adding type registration java.lang.Long -> org.hibernate.type.LongType@34b9f960
+2017-10-28 12:11:47 DEBUG - Adding type registration float -> org.hibernate.type.FloatType@7ba8c737
+2017-10-28 12:11:47 DEBUG - Adding type registration float -> org.hibernate.type.FloatType@7ba8c737
+2017-10-28 12:11:47 DEBUG - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@7ba8c737
+2017-10-28 12:11:47 DEBUG - Adding type registration double -> org.hibernate.type.DoubleType@6950ed69
+2017-10-28 12:11:47 DEBUG - Adding type registration double -> org.hibernate.type.DoubleType@6950ed69
+2017-10-28 12:11:47 DEBUG - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@6950ed69
+2017-10-28 12:11:47 DEBUG - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@6aa8e115
+2017-10-28 12:11:47 DEBUG - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@6aa8e115
+2017-10-28 12:11:47 DEBUG - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@609bcfb6
+2017-10-28 12:11:47 DEBUG - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@609bcfb6
+2017-10-28 12:11:47 DEBUG - Adding type registration string -> org.hibernate.type.StringType@6f1c29b7
+2017-10-28 12:11:47 DEBUG - Adding type registration java.lang.String -> org.hibernate.type.StringType@6f1c29b7
+2017-10-28 12:11:47 DEBUG - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@2cb2fc20
+2017-10-28 12:11:47 DEBUG - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@4fa1c212
+2017-10-28 12:11:47 DEBUG - Adding type registration url -> org.hibernate.type.UrlType@3224a577
+2017-10-28 12:11:47 DEBUG - Adding type registration java.net.URL -> org.hibernate.type.UrlType@3224a577
+2017-10-28 12:11:47 DEBUG - Adding type registration Duration -> org.hibernate.type.DurationType@463fd068
+2017-10-28 12:11:47 DEBUG - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@463fd068
+2017-10-28 12:11:47 DEBUG - Adding type registration Instant -> org.hibernate.type.InstantType@12299890
+2017-10-28 12:11:47 DEBUG - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@12299890
+2017-10-28 12:11:47 DEBUG - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@a37aefe
+2017-10-28 12:11:47 DEBUG - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@a37aefe
+2017-10-28 12:11:47 DEBUG - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@6a57ae10
+2017-10-28 12:11:47 DEBUG - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@6a57ae10
+2017-10-28 12:11:47 DEBUG - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@6b6776cb
+2017-10-28 12:11:47 DEBUG - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@6b6776cb
+2017-10-28 12:11:47 DEBUG - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@5a37d3ed
+2017-10-28 12:11:47 DEBUG - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@5a37d3ed
+2017-10-28 12:11:47 DEBUG - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@79c97cb
+2017-10-28 12:11:47 DEBUG - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@79c97cb
+2017-10-28 12:11:47 DEBUG - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@2b9ed6da
+2017-10-28 12:11:47 DEBUG - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@2b9ed6da
+2017-10-28 12:11:47 DEBUG - Adding type registration date -> org.hibernate.type.DateType@1187c9e8
+2017-10-28 12:11:47 DEBUG - Adding type registration java.sql.Date -> org.hibernate.type.DateType@1187c9e8
+2017-10-28 12:11:47 DEBUG - Adding type registration time -> org.hibernate.type.TimeType@45ac5f9b
+2017-10-28 12:11:47 DEBUG - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@45ac5f9b
+2017-10-28 12:11:47 DEBUG - Adding type registration timestamp -> org.hibernate.type.TimestampType@2a3888c1
+2017-10-28 12:11:47 DEBUG - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@2a3888c1
+2017-10-28 12:11:47 DEBUG - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@2a3888c1
+2017-10-28 12:11:47 DEBUG - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@57ad2aa7
+2017-10-28 12:11:47 DEBUG - Adding type registration calendar -> org.hibernate.type.CalendarType@1b8a29df
+2017-10-28 12:11:47 DEBUG - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@1b8a29df
+2017-10-28 12:11:47 DEBUG - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@1b8a29df
+2017-10-28 12:11:47 DEBUG - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@46271dd6
+2017-10-28 12:11:47 DEBUG - Adding type registration locale -> org.hibernate.type.LocaleType@125290e5
+2017-10-28 12:11:47 DEBUG - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@125290e5
+2017-10-28 12:11:47 DEBUG - Adding type registration currency -> org.hibernate.type.CurrencyType@490caf5f
+2017-10-28 12:11:47 DEBUG - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@490caf5f
+2017-10-28 12:11:47 DEBUG - Adding type registration timezone -> org.hibernate.type.TimeZoneType@934b6cb
+2017-10-28 12:11:47 DEBUG - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@934b6cb
+2017-10-28 12:11:47 DEBUG - Adding type registration class -> org.hibernate.type.ClassType@563e4951
+2017-10-28 12:11:47 DEBUG - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@563e4951
+2017-10-28 12:11:47 DEBUG - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@1f75a668
+2017-10-28 12:11:47 DEBUG - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@1f75a668
+2017-10-28 12:11:47 DEBUG - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@2812b107
+2017-10-28 12:11:47 DEBUG - Adding type registration binary -> org.hibernate.type.BinaryType@5e403b4a
+2017-10-28 12:11:47 DEBUG - Adding type registration byte[] -> org.hibernate.type.BinaryType@5e403b4a
+2017-10-28 12:11:47 DEBUG - Adding type registration [B -> org.hibernate.type.BinaryType@5e403b4a
+2017-10-28 12:11:47 DEBUG - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@16b2bb0c
+2017-10-28 12:11:47 DEBUG - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@16b2bb0c
+2017-10-28 12:11:47 DEBUG - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@16b2bb0c
+2017-10-28 12:11:47 DEBUG - Adding type registration row_version -> org.hibernate.type.RowVersionType@7e19ebf0
+2017-10-28 12:11:47 DEBUG - Adding type registration image -> org.hibernate.type.ImageType@4816278d
+2017-10-28 12:11:47 DEBUG - Adding type registration characters -> org.hibernate.type.CharArrayType@39d9314d
+2017-10-28 12:11:47 DEBUG - Adding type registration char[] -> org.hibernate.type.CharArrayType@39d9314d
+2017-10-28 12:11:47 DEBUG - Adding type registration [C -> org.hibernate.type.CharArrayType@39d9314d
+2017-10-28 12:11:47 DEBUG - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@7cbd9d24
+2017-10-28 12:11:47 DEBUG - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@7cbd9d24
+2017-10-28 12:11:47 DEBUG - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@7cbd9d24
+2017-10-28 12:11:47 DEBUG - Adding type registration text -> org.hibernate.type.TextType@4416d64f
+2017-10-28 12:11:47 DEBUG - Adding type registration ntext -> org.hibernate.type.NTextType@5a5338df
+2017-10-28 12:11:47 DEBUG - Adding type registration blob -> org.hibernate.type.BlobType@3e74829
+2017-10-28 12:11:47 DEBUG - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@3e74829
+2017-10-28 12:11:47 DEBUG - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@7d286fb6
+2017-10-28 12:11:47 DEBUG - Adding type registration clob -> org.hibernate.type.ClobType@3148f668
+2017-10-28 12:11:47 DEBUG - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@3148f668
+2017-10-28 12:11:48 DEBUG - Adding type registration nclob -> org.hibernate.type.NClobType@455b6df1
+2017-10-28 12:11:48 DEBUG - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@455b6df1
+2017-10-28 12:11:48 DEBUG - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@14bee915
+2017-10-28 12:11:48 DEBUG - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@3af0a9da
+2017-10-28 12:11:48 DEBUG - Adding type registration serializable -> org.hibernate.type.SerializableType@45a37759
+2017-10-28 12:11:48 DEBUG - Adding type registration object -> org.hibernate.type.ObjectType@38604b81
+2017-10-28 12:11:48 DEBUG - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@38604b81
+2017-10-28 12:11:48 DEBUG - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@ae3540e
+2017-10-28 12:11:48 DEBUG - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@3688eb5b
+2017-10-28 12:11:48 DEBUG - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@7922d892
+2017-10-28 12:11:48 DEBUG - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@345f69f3
+2017-10-28 12:11:48 DEBUG - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@3f57bcad
+2017-10-28 12:11:48 DEBUG - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@51549490
+2017-10-28 12:11:48 DEBUG - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@73d983ea
+2017-10-28 12:11:48 DEBUG - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@432038ec
+2017-10-28 12:11:48 WARN  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-10-28 12:11:48 INFO  - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/auth]
+2017-10-28 12:11:48 INFO  - HHH10001001: Connection properties: {user=postgres, password=****}
+2017-10-28 12:11:48 INFO  - HHH10001003: Autocommit mode: false
+2017-10-28 12:11:48 INFO  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-28 12:11:48 INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2017-10-28 12:11:48 INFO  - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-10-28 12:11:48 DEBUG - Adding type registration pg-uuid -> org.hibernate.type.PostgresUUIDType@53d1b9b3
+2017-10-28 12:11:48 DEBUG - Adding type registration java.util.UUID -> org.hibernate.type.PostgresUUIDType@53d1b9b3
+2017-10-28 12:11:48 INFO  - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@1f75a668
+2017-10-28 12:13:42 INFO  - HHH000412: Hibernate Core {5.2.11.Final}
+2017-10-28 12:13:42 INFO  - HHH000206: hibernate.properties not found
+2017-10-28 12:13:43 INFO  - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-10-28 12:13:45 DEBUG - Adding type registration boolean -> org.hibernate.type.BooleanType@1cf56a1c
+2017-10-28 12:13:45 DEBUG - Adding type registration boolean -> org.hibernate.type.BooleanType@1cf56a1c
+2017-10-28 12:13:45 DEBUG - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@1cf56a1c
+2017-10-28 12:13:45 DEBUG - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@81d9a72
+2017-10-28 12:13:45 DEBUG - Adding type registration true_false -> org.hibernate.type.TrueFalseType@1ebea008
+2017-10-28 12:13:45 DEBUG - Adding type registration yes_no -> org.hibernate.type.YesNoType@163370c2
+2017-10-28 12:13:45 DEBUG - Adding type registration byte -> org.hibernate.type.ByteType@c667f46
+2017-10-28 12:13:45 DEBUG - Adding type registration byte -> org.hibernate.type.ByteType@c667f46
+2017-10-28 12:13:45 DEBUG - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@c667f46
+2017-10-28 12:13:45 DEBUG - Adding type registration character -> org.hibernate.type.CharacterType@456d6c1e
+2017-10-28 12:13:45 DEBUG - Adding type registration char -> org.hibernate.type.CharacterType@456d6c1e
+2017-10-28 12:13:45 DEBUG - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@456d6c1e
+2017-10-28 12:13:45 DEBUG - Adding type registration short -> org.hibernate.type.ShortType@471a9022
+2017-10-28 12:13:45 DEBUG - Adding type registration short -> org.hibernate.type.ShortType@471a9022
+2017-10-28 12:13:45 DEBUG - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@471a9022
+2017-10-28 12:13:45 DEBUG - Adding type registration integer -> org.hibernate.type.IntegerType@4bc222e
+2017-10-28 12:13:45 DEBUG - Adding type registration int -> org.hibernate.type.IntegerType@4bc222e
+2017-10-28 12:13:45 DEBUG - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@4bc222e
+2017-10-28 12:13:45 DEBUG - Adding type registration long -> org.hibernate.type.LongType@34b9f960
+2017-10-28 12:13:45 DEBUG - Adding type registration long -> org.hibernate.type.LongType@34b9f960
+2017-10-28 12:13:45 DEBUG - Adding type registration java.lang.Long -> org.hibernate.type.LongType@34b9f960
+2017-10-28 12:13:45 DEBUG - Adding type registration float -> org.hibernate.type.FloatType@7ba8c737
+2017-10-28 12:13:45 DEBUG - Adding type registration float -> org.hibernate.type.FloatType@7ba8c737
+2017-10-28 12:13:45 DEBUG - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@7ba8c737
+2017-10-28 12:13:45 DEBUG - Adding type registration double -> org.hibernate.type.DoubleType@6950ed69
+2017-10-28 12:13:45 DEBUG - Adding type registration double -> org.hibernate.type.DoubleType@6950ed69
+2017-10-28 12:13:45 DEBUG - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@6950ed69
+2017-10-28 12:13:45 DEBUG - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@6aa8e115
+2017-10-28 12:13:45 DEBUG - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@6aa8e115
+2017-10-28 12:13:45 DEBUG - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@609bcfb6
+2017-10-28 12:13:45 DEBUG - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@609bcfb6
+2017-10-28 12:13:45 DEBUG - Adding type registration string -> org.hibernate.type.StringType@6f1c29b7
+2017-10-28 12:13:45 DEBUG - Adding type registration java.lang.String -> org.hibernate.type.StringType@6f1c29b7
+2017-10-28 12:13:45 DEBUG - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@2cb2fc20
+2017-10-28 12:13:45 DEBUG - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@4fa1c212
+2017-10-28 12:13:45 DEBUG - Adding type registration url -> org.hibernate.type.UrlType@3224a577
+2017-10-28 12:13:45 DEBUG - Adding type registration java.net.URL -> org.hibernate.type.UrlType@3224a577
+2017-10-28 12:13:45 DEBUG - Adding type registration Duration -> org.hibernate.type.DurationType@463fd068
+2017-10-28 12:13:45 DEBUG - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@463fd068
+2017-10-28 12:13:45 DEBUG - Adding type registration Instant -> org.hibernate.type.InstantType@12299890
+2017-10-28 12:13:45 DEBUG - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@12299890
+2017-10-28 12:13:45 DEBUG - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@a37aefe
+2017-10-28 12:13:45 DEBUG - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@a37aefe
+2017-10-28 12:13:45 DEBUG - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@6a57ae10
+2017-10-28 12:13:45 DEBUG - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@6a57ae10
+2017-10-28 12:13:45 DEBUG - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@6b6776cb
+2017-10-28 12:13:45 DEBUG - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@6b6776cb
+2017-10-28 12:13:45 DEBUG - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@5a37d3ed
+2017-10-28 12:13:45 DEBUG - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@5a37d3ed
+2017-10-28 12:13:45 DEBUG - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@79c97cb
+2017-10-28 12:13:45 DEBUG - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@79c97cb
+2017-10-28 12:13:45 DEBUG - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@2b9ed6da
+2017-10-28 12:13:45 DEBUG - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@2b9ed6da
+2017-10-28 12:13:45 DEBUG - Adding type registration date -> org.hibernate.type.DateType@1187c9e8
+2017-10-28 12:13:45 DEBUG - Adding type registration java.sql.Date -> org.hibernate.type.DateType@1187c9e8
+2017-10-28 12:13:45 DEBUG - Adding type registration time -> org.hibernate.type.TimeType@45ac5f9b
+2017-10-28 12:13:45 DEBUG - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@45ac5f9b
+2017-10-28 12:13:45 DEBUG - Adding type registration timestamp -> org.hibernate.type.TimestampType@2a3888c1
+2017-10-28 12:13:45 DEBUG - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@2a3888c1
+2017-10-28 12:13:45 DEBUG - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@2a3888c1
+2017-10-28 12:13:45 DEBUG - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@57ad2aa7
+2017-10-28 12:13:45 DEBUG - Adding type registration calendar -> org.hibernate.type.CalendarType@1b8a29df
+2017-10-28 12:13:45 DEBUG - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@1b8a29df
+2017-10-28 12:13:45 DEBUG - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@1b8a29df
+2017-10-28 12:13:45 DEBUG - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@46271dd6
+2017-10-28 12:13:45 DEBUG - Adding type registration locale -> org.hibernate.type.LocaleType@125290e5
+2017-10-28 12:13:45 DEBUG - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@125290e5
+2017-10-28 12:13:45 DEBUG - Adding type registration currency -> org.hibernate.type.CurrencyType@490caf5f
+2017-10-28 12:13:45 DEBUG - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@490caf5f
+2017-10-28 12:13:45 DEBUG - Adding type registration timezone -> org.hibernate.type.TimeZoneType@934b6cb
+2017-10-28 12:13:45 DEBUG - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@934b6cb
+2017-10-28 12:13:45 DEBUG - Adding type registration class -> org.hibernate.type.ClassType@563e4951
+2017-10-28 12:13:45 DEBUG - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@563e4951
+2017-10-28 12:13:45 DEBUG - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@1f75a668
+2017-10-28 12:13:45 DEBUG - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@1f75a668
+2017-10-28 12:13:45 DEBUG - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@2812b107
+2017-10-28 12:13:45 DEBUG - Adding type registration binary -> org.hibernate.type.BinaryType@5e403b4a
+2017-10-28 12:13:45 DEBUG - Adding type registration byte[] -> org.hibernate.type.BinaryType@5e403b4a
+2017-10-28 12:13:46 DEBUG - Adding type registration [B -> org.hibernate.type.BinaryType@5e403b4a
+2017-10-28 12:13:46 DEBUG - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@16b2bb0c
+2017-10-28 12:13:46 DEBUG - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@16b2bb0c
+2017-10-28 12:13:46 DEBUG - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@16b2bb0c
+2017-10-28 12:13:46 DEBUG - Adding type registration row_version -> org.hibernate.type.RowVersionType@7e19ebf0
+2017-10-28 12:13:46 DEBUG - Adding type registration image -> org.hibernate.type.ImageType@4816278d
+2017-10-28 12:13:46 DEBUG - Adding type registration characters -> org.hibernate.type.CharArrayType@39d9314d
+2017-10-28 12:13:46 DEBUG - Adding type registration char[] -> org.hibernate.type.CharArrayType@39d9314d
+2017-10-28 12:13:46 DEBUG - Adding type registration [C -> org.hibernate.type.CharArrayType@39d9314d
+2017-10-28 12:13:46 DEBUG - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@7cbd9d24
+2017-10-28 12:13:46 DEBUG - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@7cbd9d24
+2017-10-28 12:13:46 DEBUG - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@7cbd9d24
+2017-10-28 12:13:46 DEBUG - Adding type registration text -> org.hibernate.type.TextType@4416d64f
+2017-10-28 12:13:46 DEBUG - Adding type registration ntext -> org.hibernate.type.NTextType@5a5338df
+2017-10-28 12:13:46 DEBUG - Adding type registration blob -> org.hibernate.type.BlobType@3e74829
+2017-10-28 12:13:46 DEBUG - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@3e74829
+2017-10-28 12:13:46 DEBUG - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@7d286fb6
+2017-10-28 12:13:46 DEBUG - Adding type registration clob -> org.hibernate.type.ClobType@3148f668
+2017-10-28 12:13:46 DEBUG - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@3148f668
+2017-10-28 12:13:46 DEBUG - Adding type registration nclob -> org.hibernate.type.NClobType@455b6df1
+2017-10-28 12:13:46 DEBUG - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@455b6df1
+2017-10-28 12:13:46 DEBUG - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@14bee915
+2017-10-28 12:13:46 DEBUG - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@3af0a9da
+2017-10-28 12:13:46 DEBUG - Adding type registration serializable -> org.hibernate.type.SerializableType@45a37759
+2017-10-28 12:13:46 DEBUG - Adding type registration object -> org.hibernate.type.ObjectType@38604b81
+2017-10-28 12:13:46 DEBUG - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@38604b81
+2017-10-28 12:13:46 DEBUG - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@ae3540e
+2017-10-28 12:13:46 DEBUG - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@3688eb5b
+2017-10-28 12:13:46 DEBUG - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@7922d892
+2017-10-28 12:13:46 DEBUG - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@345f69f3
+2017-10-28 12:13:46 DEBUG - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@3f57bcad
+2017-10-28 12:13:46 DEBUG - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@51549490
+2017-10-28 12:13:46 DEBUG - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@73d983ea
+2017-10-28 12:13:46 DEBUG - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@432038ec
+2017-10-28 12:13:46 WARN  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-10-28 12:13:46 INFO  - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/auth]
+2017-10-28 12:13:46 INFO  - HHH10001001: Connection properties: {user=postgres, password=****}
+2017-10-28 12:13:46 INFO  - HHH10001003: Autocommit mode: false
+2017-10-28 12:13:46 INFO  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-28 12:13:46 INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2017-10-28 12:13:46 INFO  - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-10-28 12:13:46 DEBUG - Adding type registration pg-uuid -> org.hibernate.type.PostgresUUIDType@53d1b9b3
+2017-10-28 12:13:46 DEBUG - Adding type registration java.util.UUID -> org.hibernate.type.PostgresUUIDType@53d1b9b3
+2017-10-28 12:13:46 INFO  - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@1f75a668
+2017-10-28 12:13:47 TRACE - Scoping types to session factory org.hibernate.internal.SessionFactoryImpl@71ea1fda
+2017-10-28 12:13:47 DEBUG - insert into public.tokens (expired_date) values (?)
+2017-10-28 12:13:47 TRACE - binding parameter [1] as [TIMESTAMP] - [2017-10-28 13:13:42.446]
+2017-10-28 12:13:48 DEBUG - select tokensenti0_.id as id1_1_0_, tokensenti0_.expired_date as expired_2_1_0_, tokensenti0_.value as value3_1_0_ from public.tokens tokensenti0_ where tokensenti0_.id=?
+2017-10-28 12:13:48 TRACE - binding parameter [1] as [BIGINT] - [223]
+2017-10-28 12:13:48 TRACE - extracted value ([expired_2_1_0_] : [TIMESTAMP]) - [2017-10-28 13:13:42.446]
+2017-10-28 12:13:48 TRACE - extracted value ([value3_1_0_] : [OTHER]) - [43416b08-68a3-4bff-acb3-d77d380e9b30]
+2017-10-28 12:13:48 TRACE - Created collection wrapper: [generated.TokensEntity.sessionsById#223]
+2017-10-28 12:13:48 TRACE - Created collection wrapper: [generated.TokensEntity.sessionsById_0#223]
+2017-10-28 12:13:48 DEBUG - insert into public.tokens (expired_date) values (?)
+2017-10-28 12:13:48 TRACE - binding parameter [1] as [TIMESTAMP] - [2017-11-01 12:13:42.446]
+2017-10-28 12:13:48 DEBUG - select tokensenti0_.id as id1_1_0_, tokensenti0_.expired_date as expired_2_1_0_, tokensenti0_.value as value3_1_0_ from public.tokens tokensenti0_ where tokensenti0_.id=?
+2017-10-28 12:13:48 TRACE - binding parameter [1] as [BIGINT] - [224]
+2017-10-28 12:13:48 TRACE - extracted value ([expired_2_1_0_] : [TIMESTAMP]) - [2017-11-01 12:13:42.446]
+2017-10-28 12:13:48 TRACE - extracted value ([value3_1_0_] : [OTHER]) - [72bb3828-7d64-4f42-90f1-56dafcf4d98e]
+2017-10-28 12:13:48 TRACE - Created collection wrapper: [generated.TokensEntity.sessionsById#224]
+2017-10-28 12:13:48 TRACE - Created collection wrapper: [generated.TokensEntity.sessionsById_0#224]
+2017-10-28 12:13:48 DEBUG - insert into public.sessions (access_token, refresh_token, user_id) values (?, ?, ?)
+2017-10-28 12:13:48 TRACE - binding parameter [1] as [BIGINT] - [223]
+2017-10-28 12:13:48 TRACE - binding parameter [2] as [BIGINT] - [224]
+2017-10-28 12:13:48 TRACE - binding parameter [3] as [BIGINT] - [-6041340134901124555]
+2017-10-28 12:13:48 DEBUG - update public.tokens set expired_date=? where id=?
+2017-10-28 12:13:48 TRACE - binding parameter [1] as [TIMESTAMP] - [2017-10-28 13:13:42.446]
+2017-10-28 12:13:48 TRACE - binding parameter [2] as [BIGINT] - [223]
+2017-10-28 12:13:48 DEBUG - update public.tokens set expired_date=? where id=?
+2017-10-28 12:13:48 TRACE - binding parameter [1] as [TIMESTAMP] - [2017-11-01 12:13:42.446]
+2017-10-28 12:13:48 TRACE - binding parameter [2] as [BIGINT] - [224]
+2017-10-28 12:13:48 WARN  - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2017-10-28 12:13:48 DEBUG - select this_.id as id1_1_0_, this_.expired_date as expired_2_1_0_, this_.value as value3_1_0_ from public.tokens this_ where this_.value=?
+2017-10-28 12:13:48 TRACE - binding parameter [1] as [OTHER] - [72bb3828-7d64-4f42-90f1-56dafcf4d98e]
+2017-10-28 12:13:48 TRACE - extracted value ([id1_1_0_] : [BIGINT]) - [224]
+2017-10-28 12:13:48 TRACE - extracted value ([expired_2_1_0_] : [TIMESTAMP]) - [2017-11-01 12:13:42.446]
+2017-10-28 12:13:48 TRACE - extracted value ([value3_1_0_] : [OTHER]) - [72bb3828-7d64-4f42-90f1-56dafcf4d98e]
+2017-10-28 12:13:48 TRACE - Created collection wrapper: [generated.TokensEntity.sessionsById#224]
+2017-10-28 12:13:48 TRACE - Created collection wrapper: [generated.TokensEntity.sessionsById_0#224]
+2017-10-28 12:13:48 WARN  - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2017-10-28 12:13:48 DEBUG - select this_.id as id1_0_2_, this_.access_token as access_t3_0_2_, this_.refresh_token as refresh_4_0_2_, this_.user_id as user_id2_0_2_, tokensenti2_.id as id1_1_0_, tokensenti2_.expired_date as expired_2_1_0_, tokensenti2_.value as value3_1_0_, tokensenti3_.id as id1_1_1_, tokensenti3_.expired_date as expired_2_1_1_, tokensenti3_.value as value3_1_1_ from public.sessions this_ left outer join public.tokens tokensenti2_ on this_.access_token=tokensenti2_.id left outer join public.tokens tokensenti3_ on this_.refresh_token=tokensenti3_.id where this_.refresh_token=?
+2017-10-28 12:13:48 TRACE - binding parameter [1] as [BIGINT] - [224]
+2017-10-28 12:13:48 TRACE - extracted value ([id1_1_0_] : [BIGINT]) - [223]
+2017-10-28 12:13:48 TRACE - extracted value ([id1_1_1_] : [BIGINT]) - [224]
+2017-10-28 12:13:48 TRACE - extracted value ([id1_0_2_] : [BIGINT]) - [72]
+2017-10-28 12:13:48 TRACE - extracted value ([expired_2_1_0_] : [TIMESTAMP]) - [2017-10-28 13:13:42.446]
+2017-10-28 12:13:48 TRACE - extracted value ([value3_1_0_] : [OTHER]) - [43416b08-68a3-4bff-acb3-d77d380e9b30]
+2017-10-28 12:13:48 TRACE - extracted value ([expired_2_1_1_] : [TIMESTAMP]) - [2017-11-01 12:13:42.446]
+2017-10-28 12:13:48 TRACE - extracted value ([value3_1_1_] : [OTHER]) - [72bb3828-7d64-4f42-90f1-56dafcf4d98e]
+2017-10-28 12:13:48 TRACE - extracted value ([access_t3_0_2_] : [BIGINT]) - [223]
+2017-10-28 12:13:48 TRACE - extracted value ([refresh_4_0_2_] : [BIGINT]) - [224]
+2017-10-28 12:13:48 TRACE - extracted value ([user_id2_0_2_] : [BIGINT]) - [-6041340134901124555]
+2017-10-28 12:13:48 TRACE - Created collection wrapper: [generated.TokensEntity.sessionsById#223]
+2017-10-28 12:13:48 TRACE - Created collection wrapper: [generated.TokensEntity.sessionsById_0#223]
+2017-10-28 12:13:48 TRACE - Created collection wrapper: [generated.TokensEntity.sessionsById#224]
+2017-10-28 12:13:48 TRACE - Created collection wrapper: [generated.TokensEntity.sessionsById_0#224]
+2017-10-28 12:13:48 DEBUG - insert into public.tokens (expired_date) values (?)
+2017-10-28 12:13:48 TRACE - binding parameter [1] as [TIMESTAMP] - [2017-10-28 13:13:48.311]
+2017-10-28 12:13:48 DEBUG - select tokensenti0_.id as id1_1_0_, tokensenti0_.expired_date as expired_2_1_0_, tokensenti0_.value as value3_1_0_ from public.tokens tokensenti0_ where tokensenti0_.id=?
+2017-10-28 12:13:48 TRACE - binding parameter [1] as [BIGINT] - [225]
+2017-10-28 12:13:48 TRACE - extracted value ([expired_2_1_0_] : [TIMESTAMP]) - [2017-10-28 13:13:48.311]
+2017-10-28 12:13:48 TRACE - extracted value ([value3_1_0_] : [OTHER]) - [566836a3-fdfa-42e3-b3b7-12c6c32bb10a]
+2017-10-28 12:13:48 TRACE - Created collection wrapper: [generated.TokensEntity.sessionsById#225]
+2017-10-28 12:13:48 TRACE - Created collection wrapper: [generated.TokensEntity.sessionsById_0#225]
+2017-10-28 12:13:48 DEBUG - insert into public.tokens (expired_date) values (?)
+2017-10-28 12:13:48 TRACE - binding parameter [1] as [TIMESTAMP] - [2017-11-01 12:13:48.311]
+2017-10-28 12:13:48 DEBUG - select tokensenti0_.id as id1_1_0_, tokensenti0_.expired_date as expired_2_1_0_, tokensenti0_.value as value3_1_0_ from public.tokens tokensenti0_ where tokensenti0_.id=?
+2017-10-28 12:13:48 TRACE - binding parameter [1] as [BIGINT] - [226]
+2017-10-28 12:13:48 TRACE - extracted value ([expired_2_1_0_] : [TIMESTAMP]) - [2017-11-01 12:13:48.311]
+2017-10-28 12:13:48 TRACE - extracted value ([value3_1_0_] : [OTHER]) - [bde3708e-178f-4d66-b887-2bb1f5540c3a]
+2017-10-28 12:13:48 TRACE - Created collection wrapper: [generated.TokensEntity.sessionsById#226]
+2017-10-28 12:13:48 TRACE - Created collection wrapper: [generated.TokensEntity.sessionsById_0#226]
+2017-10-28 12:13:48 DEBUG - update public.sessions set access_token=?, refresh_token=?, user_id=? where id=?
+2017-10-28 12:13:48 TRACE - binding parameter [1] as [BIGINT] - [225]
+2017-10-28 12:13:48 TRACE - binding parameter [2] as [BIGINT] - [226]
+2017-10-28 12:13:48 TRACE - binding parameter [3] as [BIGINT] - [-6041340134901124555]
+2017-10-28 12:13:48 TRACE - binding parameter [4] as [BIGINT] - [72]
+2017-10-28 12:13:48 DEBUG - update public.tokens set expired_date=? where id=?
+2017-10-28 12:13:48 TRACE - binding parameter [1] as [TIMESTAMP] - [2017-10-28 13:13:48.311]
+2017-10-28 12:13:48 TRACE - binding parameter [2] as [BIGINT] - [225]
+2017-10-28 12:13:48 DEBUG - update public.tokens set expired_date=? where id=?
+2017-10-28 12:13:48 TRACE - binding parameter [1] as [TIMESTAMP] - [2017-11-01 12:13:48.311]
+2017-10-28 12:13:48 TRACE - binding parameter [2] as [BIGINT] - [226]
+2017-10-28 12:13:48 DEBUG - delete from public.tokens where id=?
+2017-10-28 12:13:48 TRACE - binding parameter [1] as [BIGINT] - [223]
+2017-10-28 12:13:48 DEBUG - delete from public.tokens where id=?
+2017-10-28 12:13:48 TRACE - binding parameter [1] as [BIGINT] - [224]
+2017-10-28 12:13:48 WARN  - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2017-10-28 12:13:48 DEBUG - select this_.id as id1_1_0_, this_.expired_date as expired_2_1_0_, this_.value as value3_1_0_ from public.tokens this_ where this_.value=?
+2017-10-28 12:13:48 TRACE - binding parameter [1] as [OTHER] - [566836a3-fdfa-42e3-b3b7-12c6c32bb10a]
+2017-10-28 12:13:48 TRACE - extracted value ([id1_1_0_] : [BIGINT]) - [225]
+2017-10-28 12:13:48 TRACE - extracted value ([expired_2_1_0_] : [TIMESTAMP]) - [2017-10-28 13:13:48.311]
+2017-10-28 12:13:48 TRACE - extracted value ([value3_1_0_] : [OTHER]) - [566836a3-fdfa-42e3-b3b7-12c6c32bb10a]
+2017-10-28 12:13:48 TRACE - Created collection wrapper: [generated.TokensEntity.sessionsById#225]
+2017-10-28 12:13:48 TRACE - Created collection wrapper: [generated.TokensEntity.sessionsById_0#225]
+2017-10-28 12:13:48 WARN  - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2017-10-28 12:13:48 DEBUG - select this_.id as id1_0_2_, this_.access_token as access_t3_0_2_, this_.refresh_token as refresh_4_0_2_, this_.user_id as user_id2_0_2_, tokensenti2_.id as id1_1_0_, tokensenti2_.expired_date as expired_2_1_0_, tokensenti2_.value as value3_1_0_, tokensenti3_.id as id1_1_1_, tokensenti3_.expired_date as expired_2_1_1_, tokensenti3_.value as value3_1_1_ from public.sessions this_ left outer join public.tokens tokensenti2_ on this_.access_token=tokensenti2_.id left outer join public.tokens tokensenti3_ on this_.refresh_token=tokensenti3_.id where this_.access_token=?
+2017-10-28 12:13:48 TRACE - binding parameter [1] as [BIGINT] - [225]
+2017-10-28 12:13:48 TRACE - extracted value ([id1_1_0_] : [BIGINT]) - [225]
+2017-10-28 12:13:48 TRACE - extracted value ([id1_1_1_] : [BIGINT]) - [226]
+2017-10-28 12:13:48 TRACE - extracted value ([id1_0_2_] : [BIGINT]) - [72]
+2017-10-28 12:13:48 TRACE - extracted value ([expired_2_1_0_] : [TIMESTAMP]) - [2017-10-28 13:13:48.311]
+2017-10-28 12:13:48 TRACE - extracted value ([value3_1_0_] : [OTHER]) - [566836a3-fdfa-42e3-b3b7-12c6c32bb10a]
+2017-10-28 12:13:48 TRACE - extracted value ([expired_2_1_1_] : [TIMESTAMP]) - [2017-11-01 12:13:48.311]
+2017-10-28 12:13:48 TRACE - extracted value ([value3_1_1_] : [OTHER]) - [bde3708e-178f-4d66-b887-2bb1f5540c3a]
+2017-10-28 12:13:48 TRACE - extracted value ([access_t3_0_2_] : [BIGINT]) - [225]
+2017-10-28 12:13:48 TRACE - extracted value ([refresh_4_0_2_] : [BIGINT]) - [226]
+2017-10-28 12:13:48 TRACE - extracted value ([user_id2_0_2_] : [BIGINT]) - [-6041340134901124555]
+2017-10-28 12:13:48 TRACE - Created collection wrapper: [generated.TokensEntity.sessionsById#225]
+2017-10-28 12:13:48 TRACE - Created collection wrapper: [generated.TokensEntity.sessionsById_0#225]
+2017-10-28 12:13:48 TRACE - Created collection wrapper: [generated.TokensEntity.sessionsById#226]
+2017-10-28 12:13:48 TRACE - Created collection wrapper: [generated.TokensEntity.sessionsById_0#226]
+2017-10-28 12:13:48 DEBUG - insert into public.tokens (expired_date) values (?)
+2017-10-28 12:13:48 TRACE - binding parameter [1] as [TIMESTAMP] - [2017-10-28 13:13:48.402]
+2017-10-28 12:13:48 DEBUG - select tokensenti0_.id as id1_1_0_, tokensenti0_.expired_date as expired_2_1_0_, tokensenti0_.value as value3_1_0_ from public.tokens tokensenti0_ where tokensenti0_.id=?
+2017-10-28 12:13:48 TRACE - binding parameter [1] as [BIGINT] - [227]
+2017-10-28 12:13:48 TRACE - extracted value ([expired_2_1_0_] : [TIMESTAMP]) - [2017-10-28 13:13:48.402]
+2017-10-28 12:13:48 TRACE - extracted value ([value3_1_0_] : [OTHER]) - [c3e33269-cb4b-43f6-bb50-7881195b71eb]
+2017-10-28 12:13:48 TRACE - Created collection wrapper: [generated.TokensEntity.sessionsById#227]
+2017-10-28 12:13:48 TRACE - Created collection wrapper: [generated.TokensEntity.sessionsById_0#227]
+2017-10-28 12:13:48 DEBUG - insert into public.tokens (expired_date) values (?)
+2017-10-28 12:13:48 TRACE - binding parameter [1] as [TIMESTAMP] - [2017-11-01 12:13:48.402]
+2017-10-28 12:13:48 DEBUG - select tokensenti0_.id as id1_1_0_, tokensenti0_.expired_date as expired_2_1_0_, tokensenti0_.value as value3_1_0_ from public.tokens tokensenti0_ where tokensenti0_.id=?
+2017-10-28 12:13:48 TRACE - binding parameter [1] as [BIGINT] - [228]
+2017-10-28 12:13:48 TRACE - extracted value ([expired_2_1_0_] : [TIMESTAMP]) - [2017-11-01 12:13:48.402]
+2017-10-28 12:13:48 TRACE - extracted value ([value3_1_0_] : [OTHER]) - [fb318c14-e4fb-425b-84ef-29e49b70d903]
+2017-10-28 12:13:48 TRACE - Created collection wrapper: [generated.TokensEntity.sessionsById#228]
+2017-10-28 12:13:48 TRACE - Created collection wrapper: [generated.TokensEntity.sessionsById_0#228]
+2017-10-28 12:13:48 DEBUG - update public.sessions set access_token=?, refresh_token=?, user_id=? where id=?
+2017-10-28 12:13:48 TRACE - binding parameter [1] as [BIGINT] - [227]
+2017-10-28 12:13:48 TRACE - binding parameter [2] as [BIGINT] - [228]
+2017-10-28 12:13:48 TRACE - binding parameter [3] as [BIGINT] - [-6041340134901124555]
+2017-10-28 12:13:48 TRACE - binding parameter [4] as [BIGINT] - [72]
+2017-10-28 12:13:48 DEBUG - update public.tokens set expired_date=? where id=?
+2017-10-28 12:13:48 TRACE - binding parameter [1] as [TIMESTAMP] - [2017-10-28 13:13:48.402]
+2017-10-28 12:13:48 TRACE - binding parameter [2] as [BIGINT] - [227]
+2017-10-28 12:13:48 DEBUG - update public.tokens set expired_date=? where id=?
+2017-10-28 12:13:48 TRACE - binding parameter [1] as [TIMESTAMP] - [2017-11-01 12:13:48.402]
+2017-10-28 12:13:48 TRACE - binding parameter [2] as [BIGINT] - [228]
+2017-10-28 12:13:48 DEBUG - delete from public.tokens where id=?
+2017-10-28 12:13:48 TRACE - binding parameter [1] as [BIGINT] - [225]
+2017-10-28 12:13:48 DEBUG - delete from public.tokens where id=?
+2017-10-28 12:13:48 TRACE - binding parameter [1] as [BIGINT] - [226]
+2017-10-28 12:13:48 WARN  - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2017-10-28 12:13:48 DEBUG - select this_.id as id1_0_2_, this_.access_token as access_t3_0_2_, this_.refresh_token as refresh_4_0_2_, this_.user_id as user_id2_0_2_, tokensenti2_.id as id1_1_0_, tokensenti2_.expired_date as expired_2_1_0_, tokensenti2_.value as value3_1_0_, tokensenti3_.id as id1_1_1_, tokensenti3_.expired_date as expired_2_1_1_, tokensenti3_.value as value3_1_1_ from public.sessions this_ left outer join public.tokens tokensenti2_ on this_.access_token=tokensenti2_.id left outer join public.tokens tokensenti3_ on this_.refresh_token=tokensenti3_.id where this_.user_id=?
+2017-10-28 12:13:48 TRACE - binding parameter [1] as [BIGINT] - [-6041340134901124555]
+2017-10-28 12:13:48 TRACE - extracted value ([id1_1_0_] : [BIGINT]) - [227]
+2017-10-28 12:13:48 TRACE - extracted value ([id1_1_1_] : [BIGINT]) - [228]
+2017-10-28 12:13:48 TRACE - extracted value ([id1_0_2_] : [BIGINT]) - [72]
+2017-10-28 12:13:48 TRACE - extracted value ([expired_2_1_0_] : [TIMESTAMP]) - [2017-10-28 13:13:48.402]
+2017-10-28 12:13:48 TRACE - extracted value ([value3_1_0_] : [OTHER]) - [c3e33269-cb4b-43f6-bb50-7881195b71eb]
+2017-10-28 12:13:48 TRACE - extracted value ([expired_2_1_1_] : [TIMESTAMP]) - [2017-11-01 12:13:48.402]
+2017-10-28 12:13:48 TRACE - extracted value ([value3_1_1_] : [OTHER]) - [fb318c14-e4fb-425b-84ef-29e49b70d903]
+2017-10-28 12:13:48 TRACE - extracted value ([access_t3_0_2_] : [BIGINT]) - [227]
+2017-10-28 12:13:48 TRACE - extracted value ([refresh_4_0_2_] : [BIGINT]) - [228]
+2017-10-28 12:13:48 TRACE - extracted value ([user_id2_0_2_] : [BIGINT]) - [-6041340134901124555]
+2017-10-28 12:13:48 TRACE - Created collection wrapper: [generated.TokensEntity.sessionsById#227]
+2017-10-28 12:13:48 TRACE - Created collection wrapper: [generated.TokensEntity.sessionsById_0#227]
+2017-10-28 12:13:48 TRACE - Created collection wrapper: [generated.TokensEntity.sessionsById#228]
+2017-10-28 12:13:48 TRACE - Created collection wrapper: [generated.TokensEntity.sessionsById_0#228]
+2017-10-28 12:13:48 DEBUG - delete from public.sessions where id=?
+2017-10-28 12:13:48 TRACE - binding parameter [1] as [BIGINT] - [72]
+2017-10-28 12:13:48 DEBUG - delete from public.tokens where id=?
+2017-10-28 12:13:48 TRACE - binding parameter [1] as [BIGINT] - [227]
+2017-10-28 12:13:48 DEBUG - delete from public.tokens where id=?
+2017-10-28 12:13:48 TRACE - binding parameter [1] as [BIGINT] - [228]
+2017-10-31 17:10:54 INFO  - HHH000412: Hibernate Core {5.2.11.Final}
+2017-10-31 17:10:54 INFO  - HHH000206: hibernate.properties not found
+2017-10-31 17:10:55 INFO  - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-10-31 17:10:56 DEBUG - Adding type registration boolean -> org.hibernate.type.BooleanType@1cf56a1c
+2017-10-31 17:10:56 DEBUG - Adding type registration boolean -> org.hibernate.type.BooleanType@1cf56a1c
+2017-10-31 17:10:56 DEBUG - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@1cf56a1c
+2017-10-31 17:10:56 DEBUG - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@81d9a72
+2017-10-31 17:10:56 DEBUG - Adding type registration true_false -> org.hibernate.type.TrueFalseType@1ebea008
+2017-10-31 17:10:56 DEBUG - Adding type registration yes_no -> org.hibernate.type.YesNoType@163370c2
+2017-10-31 17:10:56 DEBUG - Adding type registration byte -> org.hibernate.type.ByteType@c667f46
+2017-10-31 17:10:56 DEBUG - Adding type registration byte -> org.hibernate.type.ByteType@c667f46
+2017-10-31 17:10:56 DEBUG - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@c667f46
+2017-10-31 17:10:56 DEBUG - Adding type registration character -> org.hibernate.type.CharacterType@456d6c1e
+2017-10-31 17:10:56 DEBUG - Adding type registration char -> org.hibernate.type.CharacterType@456d6c1e
+2017-10-31 17:10:56 DEBUG - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@456d6c1e
+2017-10-31 17:10:56 DEBUG - Adding type registration short -> org.hibernate.type.ShortType@471a9022
+2017-10-31 17:10:56 DEBUG - Adding type registration short -> org.hibernate.type.ShortType@471a9022
+2017-10-31 17:10:56 DEBUG - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@471a9022
+2017-10-31 17:10:56 DEBUG - Adding type registration integer -> org.hibernate.type.IntegerType@4bc222e
+2017-10-31 17:10:56 DEBUG - Adding type registration int -> org.hibernate.type.IntegerType@4bc222e
+2017-10-31 17:10:56 DEBUG - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@4bc222e
+2017-10-31 17:10:56 DEBUG - Adding type registration long -> org.hibernate.type.LongType@34b9f960
+2017-10-31 17:10:56 DEBUG - Adding type registration long -> org.hibernate.type.LongType@34b9f960
+2017-10-31 17:10:56 DEBUG - Adding type registration java.lang.Long -> org.hibernate.type.LongType@34b9f960
+2017-10-31 17:10:56 DEBUG - Adding type registration float -> org.hibernate.type.FloatType@7ba8c737
+2017-10-31 17:10:56 DEBUG - Adding type registration float -> org.hibernate.type.FloatType@7ba8c737
+2017-10-31 17:10:56 DEBUG - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@7ba8c737
+2017-10-31 17:10:56 DEBUG - Adding type registration double -> org.hibernate.type.DoubleType@6950ed69
+2017-10-31 17:10:56 DEBUG - Adding type registration double -> org.hibernate.type.DoubleType@6950ed69
+2017-10-31 17:10:56 DEBUG - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@6950ed69
+2017-10-31 17:10:56 DEBUG - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@6aa8e115
+2017-10-31 17:10:56 DEBUG - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@6aa8e115
+2017-10-31 17:10:56 DEBUG - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@609bcfb6
+2017-10-31 17:10:56 DEBUG - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@609bcfb6
+2017-10-31 17:10:56 DEBUG - Adding type registration string -> org.hibernate.type.StringType@6f1c29b7
+2017-10-31 17:10:56 DEBUG - Adding type registration java.lang.String -> org.hibernate.type.StringType@6f1c29b7
+2017-10-31 17:10:56 DEBUG - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@2cb2fc20
+2017-10-31 17:10:56 DEBUG - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@4fa1c212
+2017-10-31 17:10:56 DEBUG - Adding type registration url -> org.hibernate.type.UrlType@3224a577
+2017-10-31 17:10:56 DEBUG - Adding type registration java.net.URL -> org.hibernate.type.UrlType@3224a577
+2017-10-31 17:10:56 DEBUG - Adding type registration Duration -> org.hibernate.type.DurationType@463fd068
+2017-10-31 17:10:56 DEBUG - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@463fd068
+2017-10-31 17:10:56 DEBUG - Adding type registration Instant -> org.hibernate.type.InstantType@12299890
+2017-10-31 17:10:56 DEBUG - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@12299890
+2017-10-31 17:10:56 DEBUG - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@a37aefe
+2017-10-31 17:10:56 DEBUG - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@a37aefe
+2017-10-31 17:10:56 DEBUG - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@6a57ae10
+2017-10-31 17:10:56 DEBUG - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@6a57ae10
+2017-10-31 17:10:56 DEBUG - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@6b6776cb
+2017-10-31 17:10:56 DEBUG - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@6b6776cb
+2017-10-31 17:10:56 DEBUG - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@5a37d3ed
+2017-10-31 17:10:56 DEBUG - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@5a37d3ed
+2017-10-31 17:10:56 DEBUG - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@79c97cb
+2017-10-31 17:10:56 DEBUG - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@79c97cb
+2017-10-31 17:10:56 DEBUG - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@2b9ed6da
+2017-10-31 17:10:56 DEBUG - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@2b9ed6da
+2017-10-31 17:10:56 DEBUG - Adding type registration date -> org.hibernate.type.DateType@1187c9e8
+2017-10-31 17:10:56 DEBUG - Adding type registration java.sql.Date -> org.hibernate.type.DateType@1187c9e8
+2017-10-31 17:10:56 DEBUG - Adding type registration time -> org.hibernate.type.TimeType@45ac5f9b
+2017-10-31 17:10:56 DEBUG - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@45ac5f9b
+2017-10-31 17:10:56 DEBUG - Adding type registration timestamp -> org.hibernate.type.TimestampType@2a3888c1
+2017-10-31 17:10:56 DEBUG - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@2a3888c1
+2017-10-31 17:10:56 DEBUG - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@2a3888c1
+2017-10-31 17:10:56 DEBUG - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@57ad2aa7
+2017-10-31 17:10:56 DEBUG - Adding type registration calendar -> org.hibernate.type.CalendarType@1b8a29df
+2017-10-31 17:10:56 DEBUG - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@1b8a29df
+2017-10-31 17:10:56 DEBUG - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@1b8a29df
+2017-10-31 17:10:56 DEBUG - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@46271dd6
+2017-10-31 17:10:56 DEBUG - Adding type registration locale -> org.hibernate.type.LocaleType@125290e5
+2017-10-31 17:10:56 DEBUG - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@125290e5
+2017-10-31 17:10:56 DEBUG - Adding type registration currency -> org.hibernate.type.CurrencyType@490caf5f
+2017-10-31 17:10:56 DEBUG - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@490caf5f
+2017-10-31 17:10:56 DEBUG - Adding type registration timezone -> org.hibernate.type.TimeZoneType@934b6cb
+2017-10-31 17:10:56 DEBUG - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@934b6cb
+2017-10-31 17:10:56 DEBUG - Adding type registration class -> org.hibernate.type.ClassType@563e4951
+2017-10-31 17:10:56 DEBUG - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@563e4951
+2017-10-31 17:10:56 DEBUG - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@1f75a668
+2017-10-31 17:10:56 DEBUG - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@1f75a668
+2017-10-31 17:10:56 DEBUG - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@2812b107
+2017-10-31 17:10:56 DEBUG - Adding type registration binary -> org.hibernate.type.BinaryType@5e403b4a
+2017-10-31 17:10:56 DEBUG - Adding type registration byte[] -> org.hibernate.type.BinaryType@5e403b4a
+2017-10-31 17:10:56 DEBUG - Adding type registration [B -> org.hibernate.type.BinaryType@5e403b4a
+2017-10-31 17:10:56 DEBUG - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@16b2bb0c
+2017-10-31 17:10:56 DEBUG - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@16b2bb0c
+2017-10-31 17:10:56 DEBUG - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@16b2bb0c
+2017-10-31 17:10:56 DEBUG - Adding type registration row_version -> org.hibernate.type.RowVersionType@7e19ebf0
+2017-10-31 17:10:56 DEBUG - Adding type registration image -> org.hibernate.type.ImageType@4816278d
+2017-10-31 17:10:56 DEBUG - Adding type registration characters -> org.hibernate.type.CharArrayType@39d9314d
+2017-10-31 17:10:56 DEBUG - Adding type registration char[] -> org.hibernate.type.CharArrayType@39d9314d
+2017-10-31 17:10:56 DEBUG - Adding type registration [C -> org.hibernate.type.CharArrayType@39d9314d
+2017-10-31 17:10:56 DEBUG - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@7cbd9d24
+2017-10-31 17:10:56 DEBUG - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@7cbd9d24
+2017-10-31 17:10:56 DEBUG - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@7cbd9d24
+2017-10-31 17:10:56 DEBUG - Adding type registration text -> org.hibernate.type.TextType@4416d64f
+2017-10-31 17:10:56 DEBUG - Adding type registration ntext -> org.hibernate.type.NTextType@5a5338df
+2017-10-31 17:10:56 DEBUG - Adding type registration blob -> org.hibernate.type.BlobType@3e74829
+2017-10-31 17:10:56 DEBUG - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@3e74829
+2017-10-31 17:10:56 DEBUG - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@7d286fb6
+2017-10-31 17:10:56 DEBUG - Adding type registration clob -> org.hibernate.type.ClobType@3148f668
+2017-10-31 17:10:56 DEBUG - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@3148f668
+2017-10-31 17:10:56 DEBUG - Adding type registration nclob -> org.hibernate.type.NClobType@455b6df1
+2017-10-31 17:10:56 DEBUG - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@455b6df1
+2017-10-31 17:10:56 DEBUG - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@14bee915
+2017-10-31 17:10:56 DEBUG - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@3af0a9da
+2017-10-31 17:10:56 DEBUG - Adding type registration serializable -> org.hibernate.type.SerializableType@45a37759
+2017-10-31 17:10:56 DEBUG - Adding type registration object -> org.hibernate.type.ObjectType@38604b81
+2017-10-31 17:10:56 DEBUG - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@38604b81
+2017-10-31 17:10:56 DEBUG - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@ae3540e
+2017-10-31 17:10:56 DEBUG - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@3688eb5b
+2017-10-31 17:10:56 DEBUG - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@7922d892
+2017-10-31 17:10:56 DEBUG - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@345f69f3
+2017-10-31 17:10:56 DEBUG - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@3f57bcad
+2017-10-31 17:10:56 DEBUG - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@51549490
+2017-10-31 17:10:56 DEBUG - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@73d983ea
+2017-10-31 17:10:56 DEBUG - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@432038ec
+2017-10-31 17:10:56 WARN  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-10-31 17:10:56 INFO  - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/auth]
+2017-10-31 17:10:56 INFO  - HHH10001001: Connection properties: {user=postgres, password=****}
+2017-10-31 17:10:56 INFO  - HHH10001003: Autocommit mode: false
+2017-10-31 17:10:56 INFO  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-31 17:17:01 INFO  - HHH000412: Hibernate Core {5.2.11.Final}
+2017-10-31 17:17:01 INFO  - HHH000206: hibernate.properties not found
+2017-10-31 17:17:01 INFO  - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-10-31 17:17:03 DEBUG - Adding type registration boolean -> org.hibernate.type.BooleanType@1cf56a1c
+2017-10-31 17:17:03 DEBUG - Adding type registration boolean -> org.hibernate.type.BooleanType@1cf56a1c
+2017-10-31 17:17:03 DEBUG - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@1cf56a1c
+2017-10-31 17:17:03 DEBUG - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@81d9a72
+2017-10-31 17:17:03 DEBUG - Adding type registration true_false -> org.hibernate.type.TrueFalseType@1ebea008
+2017-10-31 17:17:03 DEBUG - Adding type registration yes_no -> org.hibernate.type.YesNoType@163370c2
+2017-10-31 17:17:03 DEBUG - Adding type registration byte -> org.hibernate.type.ByteType@c667f46
+2017-10-31 17:17:03 DEBUG - Adding type registration byte -> org.hibernate.type.ByteType@c667f46
+2017-10-31 17:17:03 DEBUG - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@c667f46
+2017-10-31 17:17:03 DEBUG - Adding type registration character -> org.hibernate.type.CharacterType@456d6c1e
+2017-10-31 17:17:03 DEBUG - Adding type registration char -> org.hibernate.type.CharacterType@456d6c1e
+2017-10-31 17:17:03 DEBUG - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@456d6c1e
+2017-10-31 17:17:03 DEBUG - Adding type registration short -> org.hibernate.type.ShortType@471a9022
+2017-10-31 17:17:03 DEBUG - Adding type registration short -> org.hibernate.type.ShortType@471a9022
+2017-10-31 17:17:03 DEBUG - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@471a9022
+2017-10-31 17:17:03 DEBUG - Adding type registration integer -> org.hibernate.type.IntegerType@4bc222e
+2017-10-31 17:17:03 DEBUG - Adding type registration int -> org.hibernate.type.IntegerType@4bc222e
+2017-10-31 17:17:03 DEBUG - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@4bc222e
+2017-10-31 17:17:03 DEBUG - Adding type registration long -> org.hibernate.type.LongType@34b9f960
+2017-10-31 17:17:03 DEBUG - Adding type registration long -> org.hibernate.type.LongType@34b9f960
+2017-10-31 17:17:03 DEBUG - Adding type registration java.lang.Long -> org.hibernate.type.LongType@34b9f960
+2017-10-31 17:17:03 DEBUG - Adding type registration float -> org.hibernate.type.FloatType@7ba8c737
+2017-10-31 17:17:03 DEBUG - Adding type registration float -> org.hibernate.type.FloatType@7ba8c737
+2017-10-31 17:17:03 DEBUG - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@7ba8c737
+2017-10-31 17:17:03 DEBUG - Adding type registration double -> org.hibernate.type.DoubleType@6950ed69
+2017-10-31 17:17:03 DEBUG - Adding type registration double -> org.hibernate.type.DoubleType@6950ed69
+2017-10-31 17:17:03 DEBUG - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@6950ed69
+2017-10-31 17:17:03 DEBUG - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@6aa8e115
+2017-10-31 17:17:03 DEBUG - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@6aa8e115
+2017-10-31 17:17:03 DEBUG - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@609bcfb6
+2017-10-31 17:17:03 DEBUG - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@609bcfb6
+2017-10-31 17:17:03 DEBUG - Adding type registration string -> org.hibernate.type.StringType@6f1c29b7
+2017-10-31 17:17:03 DEBUG - Adding type registration java.lang.String -> org.hibernate.type.StringType@6f1c29b7
+2017-10-31 17:17:03 DEBUG - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@2cb2fc20
+2017-10-31 17:17:03 DEBUG - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@4fa1c212
+2017-10-31 17:17:03 DEBUG - Adding type registration url -> org.hibernate.type.UrlType@3224a577
+2017-10-31 17:17:03 DEBUG - Adding type registration java.net.URL -> org.hibernate.type.UrlType@3224a577
+2017-10-31 17:17:03 DEBUG - Adding type registration Duration -> org.hibernate.type.DurationType@463fd068
+2017-10-31 17:17:03 DEBUG - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@463fd068
+2017-10-31 17:17:03 DEBUG - Adding type registration Instant -> org.hibernate.type.InstantType@12299890
+2017-10-31 17:17:03 DEBUG - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@12299890
+2017-10-31 17:17:03 DEBUG - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@a37aefe
+2017-10-31 17:17:03 DEBUG - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@a37aefe
+2017-10-31 17:17:03 DEBUG - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@6a57ae10
+2017-10-31 17:17:03 DEBUG - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@6a57ae10
+2017-10-31 17:17:03 DEBUG - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@6b6776cb
+2017-10-31 17:17:03 DEBUG - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@6b6776cb
+2017-10-31 17:17:03 DEBUG - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@5a37d3ed
+2017-10-31 17:17:03 DEBUG - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@5a37d3ed
+2017-10-31 17:17:03 DEBUG - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@79c97cb
+2017-10-31 17:17:03 DEBUG - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@79c97cb
+2017-10-31 17:17:03 DEBUG - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@2b9ed6da
+2017-10-31 17:17:03 DEBUG - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@2b9ed6da
+2017-10-31 17:17:03 DEBUG - Adding type registration date -> org.hibernate.type.DateType@1187c9e8
+2017-10-31 17:17:03 DEBUG - Adding type registration java.sql.Date -> org.hibernate.type.DateType@1187c9e8
+2017-10-31 17:17:03 DEBUG - Adding type registration time -> org.hibernate.type.TimeType@45ac5f9b
+2017-10-31 17:17:03 DEBUG - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@45ac5f9b
+2017-10-31 17:17:03 DEBUG - Adding type registration timestamp -> org.hibernate.type.TimestampType@2a3888c1
+2017-10-31 17:17:03 DEBUG - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@2a3888c1
+2017-10-31 17:17:03 DEBUG - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@2a3888c1
+2017-10-31 17:17:03 DEBUG - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@57ad2aa7
+2017-10-31 17:17:03 DEBUG - Adding type registration calendar -> org.hibernate.type.CalendarType@1b8a29df
+2017-10-31 17:17:03 DEBUG - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@1b8a29df
+2017-10-31 17:17:03 DEBUG - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@1b8a29df
+2017-10-31 17:17:03 DEBUG - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@46271dd6
+2017-10-31 17:17:03 DEBUG - Adding type registration locale -> org.hibernate.type.LocaleType@125290e5
+2017-10-31 17:17:03 DEBUG - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@125290e5
+2017-10-31 17:17:03 DEBUG - Adding type registration currency -> org.hibernate.type.CurrencyType@490caf5f
+2017-10-31 17:17:03 DEBUG - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@490caf5f
+2017-10-31 17:17:03 DEBUG - Adding type registration timezone -> org.hibernate.type.TimeZoneType@934b6cb
+2017-10-31 17:17:03 DEBUG - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@934b6cb
+2017-10-31 17:17:03 DEBUG - Adding type registration class -> org.hibernate.type.ClassType@563e4951
+2017-10-31 17:17:03 DEBUG - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@563e4951
+2017-10-31 17:17:03 DEBUG - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@1f75a668
+2017-10-31 17:17:03 DEBUG - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@1f75a668
+2017-10-31 17:17:03 DEBUG - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@2812b107
+2017-10-31 17:17:03 DEBUG - Adding type registration binary -> org.hibernate.type.BinaryType@5e403b4a
+2017-10-31 17:17:03 DEBUG - Adding type registration byte[] -> org.hibernate.type.BinaryType@5e403b4a
+2017-10-31 17:17:03 DEBUG - Adding type registration [B -> org.hibernate.type.BinaryType@5e403b4a
+2017-10-31 17:17:03 DEBUG - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@16b2bb0c
+2017-10-31 17:17:03 DEBUG - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@16b2bb0c
+2017-10-31 17:17:03 DEBUG - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@16b2bb0c
+2017-10-31 17:17:03 DEBUG - Adding type registration row_version -> org.hibernate.type.RowVersionType@7e19ebf0
+2017-10-31 17:17:03 DEBUG - Adding type registration image -> org.hibernate.type.ImageType@4816278d
+2017-10-31 17:17:03 DEBUG - Adding type registration characters -> org.hibernate.type.CharArrayType@39d9314d
+2017-10-31 17:17:03 DEBUG - Adding type registration char[] -> org.hibernate.type.CharArrayType@39d9314d
+2017-10-31 17:17:03 DEBUG - Adding type registration [C -> org.hibernate.type.CharArrayType@39d9314d
+2017-10-31 17:17:03 DEBUG - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@7cbd9d24
+2017-10-31 17:17:03 DEBUG - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@7cbd9d24
+2017-10-31 17:17:03 DEBUG - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@7cbd9d24
+2017-10-31 17:17:03 DEBUG - Adding type registration text -> org.hibernate.type.TextType@4416d64f
+2017-10-31 17:17:03 DEBUG - Adding type registration ntext -> org.hibernate.type.NTextType@5a5338df
+2017-10-31 17:17:03 DEBUG - Adding type registration blob -> org.hibernate.type.BlobType@3e74829
+2017-10-31 17:17:03 DEBUG - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@3e74829
+2017-10-31 17:17:03 DEBUG - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@7d286fb6
+2017-10-31 17:17:03 DEBUG - Adding type registration clob -> org.hibernate.type.ClobType@3148f668
+2017-10-31 17:17:03 DEBUG - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@3148f668
+2017-10-31 17:17:03 DEBUG - Adding type registration nclob -> org.hibernate.type.NClobType@455b6df1
+2017-10-31 17:17:03 DEBUG - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@455b6df1
+2017-10-31 17:17:03 DEBUG - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@14bee915
+2017-10-31 17:17:03 DEBUG - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@3af0a9da
+2017-10-31 17:17:03 DEBUG - Adding type registration serializable -> org.hibernate.type.SerializableType@45a37759
+2017-10-31 17:17:03 DEBUG - Adding type registration object -> org.hibernate.type.ObjectType@38604b81
+2017-10-31 17:17:03 DEBUG - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@38604b81
+2017-10-31 17:17:03 DEBUG - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@ae3540e
+2017-10-31 17:17:03 DEBUG - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@3688eb5b
+2017-10-31 17:17:03 DEBUG - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@7922d892
+2017-10-31 17:17:03 DEBUG - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@345f69f3
+2017-10-31 17:17:03 DEBUG - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@3f57bcad
+2017-10-31 17:17:03 DEBUG - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@51549490
+2017-10-31 17:17:03 DEBUG - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@73d983ea
+2017-10-31 17:17:03 DEBUG - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@432038ec
+2017-10-31 17:17:03 WARN  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-10-31 17:17:03 INFO  - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/auth]
+2017-10-31 17:17:03 INFO  - HHH10001001: Connection properties: {user=postgres, password=****}
+2017-10-31 17:17:03 INFO  - HHH10001003: Autocommit mode: false
+2017-10-31 17:17:03 INFO  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-31 17:17:03 INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2017-10-31 17:17:03 INFO  - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-10-31 17:17:03 DEBUG - Adding type registration pg-uuid -> org.hibernate.type.PostgresUUIDType@53d1b9b3
+2017-10-31 17:17:03 DEBUG - Adding type registration java.util.UUID -> org.hibernate.type.PostgresUUIDType@53d1b9b3
+2017-10-31 17:17:03 INFO  - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@1f75a668
+2017-10-31 17:17:04 TRACE - Scoping types to session factory org.hibernate.internal.SessionFactoryImpl@71ea1fda
+2017-10-31 17:17:04 DEBUG - insert into public.tokens (expired_date) values (?)
+2017-10-31 17:17:04 TRACE - binding parameter [1] as [TIMESTAMP] - [2017-10-31 18:17:00.941]
+2017-10-31 17:17:04 DEBUG - select tokensenti0_.id as id1_1_0_, tokensenti0_.expired_date as expired_2_1_0_, tokensenti0_.value as value3_1_0_ from public.tokens tokensenti0_ where tokensenti0_.id=?
+2017-10-31 17:17:04 TRACE - binding parameter [1] as [BIGINT] - [229]
+2017-10-31 17:17:04 TRACE - extracted value ([expired_2_1_0_] : [TIMESTAMP]) - [2017-10-31 18:17:00.941]
+2017-10-31 17:17:04 TRACE - extracted value ([value3_1_0_] : [OTHER]) - [2258b034-f8a1-464b-adae-216c7ed80854]
+2017-10-31 17:17:04 TRACE - Created collection wrapper: [generated.TokensEntity.sessionsById#229]
+2017-10-31 17:17:04 TRACE - Created collection wrapper: [generated.TokensEntity.sessionsById_0#229]
+2017-10-31 17:17:04 DEBUG - insert into public.tokens (expired_date) values (?)
+2017-10-31 17:17:04 TRACE - binding parameter [1] as [TIMESTAMP] - [2017-11-04 17:17:00.941]
+2017-10-31 17:17:04 DEBUG - select tokensenti0_.id as id1_1_0_, tokensenti0_.expired_date as expired_2_1_0_, tokensenti0_.value as value3_1_0_ from public.tokens tokensenti0_ where tokensenti0_.id=?
+2017-10-31 17:17:04 TRACE - binding parameter [1] as [BIGINT] - [230]
+2017-10-31 17:17:04 TRACE - extracted value ([expired_2_1_0_] : [TIMESTAMP]) - [2017-11-04 17:17:00.941]
+2017-10-31 17:17:04 TRACE - extracted value ([value3_1_0_] : [OTHER]) - [a7471122-1420-4190-9c5e-9145b81e0410]
+2017-10-31 17:17:04 TRACE - Created collection wrapper: [generated.TokensEntity.sessionsById#230]
+2017-10-31 17:17:04 TRACE - Created collection wrapper: [generated.TokensEntity.sessionsById_0#230]
+2017-10-31 17:17:04 DEBUG - insert into public.sessions (access_token, refresh_token, user_id) values (?, ?, ?)
+2017-10-31 17:17:04 TRACE - binding parameter [1] as [BIGINT] - [229]
+2017-10-31 17:17:04 TRACE - binding parameter [2] as [BIGINT] - [230]
+2017-10-31 17:17:04 TRACE - binding parameter [3] as [BIGINT] - [1090215747480682833]
+2017-10-31 17:17:04 DEBUG - update public.tokens set expired_date=? where id=?
+2017-10-31 17:17:04 TRACE - binding parameter [1] as [TIMESTAMP] - [2017-10-31 18:17:00.941]
+2017-10-31 17:17:04 TRACE - binding parameter [2] as [BIGINT] - [229]
+2017-10-31 17:17:04 DEBUG - update public.tokens set expired_date=? where id=?
+2017-10-31 17:17:04 TRACE - binding parameter [1] as [TIMESTAMP] - [2017-11-04 17:17:00.941]
+2017-10-31 17:17:04 TRACE - binding parameter [2] as [BIGINT] - [230]
+2017-10-31 17:17:04 WARN  - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2017-10-31 17:17:04 DEBUG - select this_.id as id1_1_0_, this_.expired_date as expired_2_1_0_, this_.value as value3_1_0_ from public.tokens this_ where this_.value=?
+2017-10-31 17:17:04 TRACE - binding parameter [1] as [OTHER] - [a7471122-1420-4190-9c5e-9145b81e0410]
+2017-10-31 17:17:04 TRACE - extracted value ([id1_1_0_] : [BIGINT]) - [230]
+2017-10-31 17:17:04 TRACE - extracted value ([expired_2_1_0_] : [TIMESTAMP]) - [2017-11-04 17:17:00.941]
+2017-10-31 17:17:04 TRACE - extracted value ([value3_1_0_] : [OTHER]) - [a7471122-1420-4190-9c5e-9145b81e0410]
+2017-10-31 17:17:04 TRACE - Created collection wrapper: [generated.TokensEntity.sessionsById#230]
+2017-10-31 17:17:04 TRACE - Created collection wrapper: [generated.TokensEntity.sessionsById_0#230]
+2017-10-31 17:17:04 WARN  - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2017-10-31 17:17:04 DEBUG - select this_.id as id1_0_2_, this_.access_token as access_t3_0_2_, this_.refresh_token as refresh_4_0_2_, this_.user_id as user_id2_0_2_, tokensenti2_.id as id1_1_0_, tokensenti2_.expired_date as expired_2_1_0_, tokensenti2_.value as value3_1_0_, tokensenti3_.id as id1_1_1_, tokensenti3_.expired_date as expired_2_1_1_, tokensenti3_.value as value3_1_1_ from public.sessions this_ left outer join public.tokens tokensenti2_ on this_.access_token=tokensenti2_.id left outer join public.tokens tokensenti3_ on this_.refresh_token=tokensenti3_.id where this_.refresh_token=?
+2017-10-31 17:17:04 TRACE - binding parameter [1] as [BIGINT] - [230]
+2017-10-31 17:17:04 TRACE - extracted value ([id1_1_0_] : [BIGINT]) - [229]
+2017-10-31 17:17:04 TRACE - extracted value ([id1_1_1_] : [BIGINT]) - [230]
+2017-10-31 17:17:04 TRACE - extracted value ([id1_0_2_] : [BIGINT]) - [73]
+2017-10-31 17:17:04 TRACE - extracted value ([expired_2_1_0_] : [TIMESTAMP]) - [2017-10-31 18:17:00.941]
+2017-10-31 17:17:04 TRACE - extracted value ([value3_1_0_] : [OTHER]) - [2258b034-f8a1-464b-adae-216c7ed80854]
+2017-10-31 17:17:04 TRACE - extracted value ([expired_2_1_1_] : [TIMESTAMP]) - [2017-11-04 17:17:00.941]
+2017-10-31 17:17:04 TRACE - extracted value ([value3_1_1_] : [OTHER]) - [a7471122-1420-4190-9c5e-9145b81e0410]
+2017-10-31 17:17:04 TRACE - extracted value ([access_t3_0_2_] : [BIGINT]) - [229]
+2017-10-31 17:17:04 TRACE - extracted value ([refresh_4_0_2_] : [BIGINT]) - [230]
+2017-10-31 17:17:04 TRACE - extracted value ([user_id2_0_2_] : [BIGINT]) - [1090215747480682833]
+2017-10-31 17:17:04 TRACE - Created collection wrapper: [generated.TokensEntity.sessionsById#229]
+2017-10-31 17:17:04 TRACE - Created collection wrapper: [generated.TokensEntity.sessionsById_0#229]
+2017-10-31 17:17:04 TRACE - Created collection wrapper: [generated.TokensEntity.sessionsById#230]
+2017-10-31 17:17:04 TRACE - Created collection wrapper: [generated.TokensEntity.sessionsById_0#230]
+2017-10-31 17:17:04 DEBUG - insert into public.tokens (expired_date) values (?)
+2017-10-31 17:17:04 TRACE - binding parameter [1] as [TIMESTAMP] - [2017-10-31 18:17:04.699]
+2017-10-31 17:17:04 DEBUG - select tokensenti0_.id as id1_1_0_, tokensenti0_.expired_date as expired_2_1_0_, tokensenti0_.value as value3_1_0_ from public.tokens tokensenti0_ where tokensenti0_.id=?
+2017-10-31 17:17:04 TRACE - binding parameter [1] as [BIGINT] - [231]
+2017-10-31 17:17:04 TRACE - extracted value ([expired_2_1_0_] : [TIMESTAMP]) - [2017-10-31 18:17:04.699]
+2017-10-31 17:17:04 TRACE - extracted value ([value3_1_0_] : [OTHER]) - [30b14067-a418-44e2-beb0-bf16acc4382c]
+2017-10-31 17:17:04 TRACE - Created collection wrapper: [generated.TokensEntity.sessionsById#231]
+2017-10-31 17:17:04 TRACE - Created collection wrapper: [generated.TokensEntity.sessionsById_0#231]
+2017-10-31 17:17:04 DEBUG - insert into public.tokens (expired_date) values (?)
+2017-10-31 17:17:04 TRACE - binding parameter [1] as [TIMESTAMP] - [2017-11-04 17:17:04.699]
+2017-10-31 17:17:04 DEBUG - select tokensenti0_.id as id1_1_0_, tokensenti0_.expired_date as expired_2_1_0_, tokensenti0_.value as value3_1_0_ from public.tokens tokensenti0_ where tokensenti0_.id=?
+2017-10-31 17:17:04 TRACE - binding parameter [1] as [BIGINT] - [232]
+2017-10-31 17:17:04 TRACE - extracted value ([expired_2_1_0_] : [TIMESTAMP]) - [2017-11-04 17:17:04.699]
+2017-10-31 17:17:04 TRACE - extracted value ([value3_1_0_] : [OTHER]) - [39293f15-2ce7-41de-9f48-b9f99e9c0c05]
+2017-10-31 17:17:04 TRACE - Created collection wrapper: [generated.TokensEntity.sessionsById#232]
+2017-10-31 17:17:04 TRACE - Created collection wrapper: [generated.TokensEntity.sessionsById_0#232]
+2017-10-31 17:17:04 DEBUG - update public.sessions set access_token=?, refresh_token=?, user_id=? where id=?
+2017-10-31 17:17:04 TRACE - binding parameter [1] as [BIGINT] - [231]
+2017-10-31 17:17:04 TRACE - binding parameter [2] as [BIGINT] - [232]
+2017-10-31 17:17:04 TRACE - binding parameter [3] as [BIGINT] - [1090215747480682833]
+2017-10-31 17:17:04 TRACE - binding parameter [4] as [BIGINT] - [73]
+2017-10-31 17:17:04 DEBUG - update public.tokens set expired_date=? where id=?
+2017-10-31 17:17:04 TRACE - binding parameter [1] as [TIMESTAMP] - [2017-10-31 18:17:04.699]
+2017-10-31 17:17:04 TRACE - binding parameter [2] as [BIGINT] - [231]
+2017-10-31 17:17:04 DEBUG - update public.tokens set expired_date=? where id=?
+2017-10-31 17:17:04 TRACE - binding parameter [1] as [TIMESTAMP] - [2017-11-04 17:17:04.699]
+2017-10-31 17:17:04 TRACE - binding parameter [2] as [BIGINT] - [232]
+2017-10-31 17:17:04 DEBUG - delete from public.tokens where id=?
+2017-10-31 17:17:04 TRACE - binding parameter [1] as [BIGINT] - [229]
+2017-10-31 17:17:04 DEBUG - delete from public.tokens where id=?
+2017-10-31 17:17:04 TRACE - binding parameter [1] as [BIGINT] - [230]
+2017-10-31 17:17:04 WARN  - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2017-10-31 17:17:04 DEBUG - select this_.id as id1_1_0_, this_.expired_date as expired_2_1_0_, this_.value as value3_1_0_ from public.tokens this_ where this_.value=?
+2017-10-31 17:17:04 TRACE - binding parameter [1] as [OTHER] - [30b14067-a418-44e2-beb0-bf16acc4382c]
+2017-10-31 17:17:04 TRACE - extracted value ([id1_1_0_] : [BIGINT]) - [231]
+2017-10-31 17:17:04 TRACE - extracted value ([expired_2_1_0_] : [TIMESTAMP]) - [2017-10-31 18:17:04.699]
+2017-10-31 17:17:04 TRACE - extracted value ([value3_1_0_] : [OTHER]) - [30b14067-a418-44e2-beb0-bf16acc4382c]
+2017-10-31 17:17:04 TRACE - Created collection wrapper: [generated.TokensEntity.sessionsById#231]
+2017-10-31 17:17:04 TRACE - Created collection wrapper: [generated.TokensEntity.sessionsById_0#231]
+2017-10-31 17:17:04 WARN  - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2017-10-31 17:17:04 DEBUG - select this_.id as id1_0_2_, this_.access_token as access_t3_0_2_, this_.refresh_token as refresh_4_0_2_, this_.user_id as user_id2_0_2_, tokensenti2_.id as id1_1_0_, tokensenti2_.expired_date as expired_2_1_0_, tokensenti2_.value as value3_1_0_, tokensenti3_.id as id1_1_1_, tokensenti3_.expired_date as expired_2_1_1_, tokensenti3_.value as value3_1_1_ from public.sessions this_ left outer join public.tokens tokensenti2_ on this_.access_token=tokensenti2_.id left outer join public.tokens tokensenti3_ on this_.refresh_token=tokensenti3_.id where this_.access_token=?
+2017-10-31 17:17:04 TRACE - binding parameter [1] as [BIGINT] - [231]
+2017-10-31 17:17:04 TRACE - extracted value ([id1_1_0_] : [BIGINT]) - [231]
+2017-10-31 17:17:04 TRACE - extracted value ([id1_1_1_] : [BIGINT]) - [232]
+2017-10-31 17:17:04 TRACE - extracted value ([id1_0_2_] : [BIGINT]) - [73]
+2017-10-31 17:17:04 TRACE - extracted value ([expired_2_1_0_] : [TIMESTAMP]) - [2017-10-31 18:17:04.699]
+2017-10-31 17:17:04 TRACE - extracted value ([value3_1_0_] : [OTHER]) - [30b14067-a418-44e2-beb0-bf16acc4382c]
+2017-10-31 17:17:04 TRACE - extracted value ([expired_2_1_1_] : [TIMESTAMP]) - [2017-11-04 17:17:04.699]
+2017-10-31 17:17:04 TRACE - extracted value ([value3_1_1_] : [OTHER]) - [39293f15-2ce7-41de-9f48-b9f99e9c0c05]
+2017-10-31 17:17:04 TRACE - extracted value ([access_t3_0_2_] : [BIGINT]) - [231]
+2017-10-31 17:17:04 TRACE - extracted value ([refresh_4_0_2_] : [BIGINT]) - [232]
+2017-10-31 17:17:04 TRACE - extracted value ([user_id2_0_2_] : [BIGINT]) - [1090215747480682833]
+2017-10-31 17:17:04 TRACE - Created collection wrapper: [generated.TokensEntity.sessionsById#231]
+2017-10-31 17:17:04 TRACE - Created collection wrapper: [generated.TokensEntity.sessionsById_0#231]
+2017-10-31 17:17:04 TRACE - Created collection wrapper: [generated.TokensEntity.sessionsById#232]
+2017-10-31 17:17:04 TRACE - Created collection wrapper: [generated.TokensEntity.sessionsById_0#232]
+2017-10-31 17:17:04 DEBUG - insert into public.tokens (expired_date) values (?)
+2017-10-31 17:17:04 TRACE - binding parameter [1] as [TIMESTAMP] - [2017-10-31 18:17:04.808]
+2017-10-31 17:17:04 DEBUG - select tokensenti0_.id as id1_1_0_, tokensenti0_.expired_date as expired_2_1_0_, tokensenti0_.value as value3_1_0_ from public.tokens tokensenti0_ where tokensenti0_.id=?
+2017-10-31 17:17:04 TRACE - binding parameter [1] as [BIGINT] - [233]
+2017-10-31 17:17:04 TRACE - extracted value ([expired_2_1_0_] : [TIMESTAMP]) - [2017-10-31 18:17:04.808]
+2017-10-31 17:17:04 TRACE - extracted value ([value3_1_0_] : [OTHER]) - [914181db-f9be-4813-ba97-4c06aa225d63]
+2017-10-31 17:17:04 TRACE - Created collection wrapper: [generated.TokensEntity.sessionsById#233]
+2017-10-31 17:17:04 TRACE - Created collection wrapper: [generated.TokensEntity.sessionsById_0#233]
+2017-10-31 17:17:04 DEBUG - insert into public.tokens (expired_date) values (?)
+2017-10-31 17:17:04 TRACE - binding parameter [1] as [TIMESTAMP] - [2017-11-04 17:17:04.808]
+2017-10-31 17:17:04 DEBUG - select tokensenti0_.id as id1_1_0_, tokensenti0_.expired_date as expired_2_1_0_, tokensenti0_.value as value3_1_0_ from public.tokens tokensenti0_ where tokensenti0_.id=?
+2017-10-31 17:17:04 TRACE - binding parameter [1] as [BIGINT] - [234]
+2017-10-31 17:17:04 TRACE - extracted value ([expired_2_1_0_] : [TIMESTAMP]) - [2017-11-04 17:17:04.808]
+2017-10-31 17:17:04 TRACE - extracted value ([value3_1_0_] : [OTHER]) - [31762375-8fa2-413e-819d-e9cc18b43c54]
+2017-10-31 17:17:04 TRACE - Created collection wrapper: [generated.TokensEntity.sessionsById#234]
+2017-10-31 17:17:04 TRACE - Created collection wrapper: [generated.TokensEntity.sessionsById_0#234]
+2017-10-31 17:17:04 DEBUG - update public.sessions set access_token=?, refresh_token=?, user_id=? where id=?
+2017-10-31 17:17:04 TRACE - binding parameter [1] as [BIGINT] - [233]
+2017-10-31 17:17:04 TRACE - binding parameter [2] as [BIGINT] - [234]
+2017-10-31 17:17:04 TRACE - binding parameter [3] as [BIGINT] - [1090215747480682833]
+2017-10-31 17:17:04 TRACE - binding parameter [4] as [BIGINT] - [73]
+2017-10-31 17:17:04 DEBUG - update public.tokens set expired_date=? where id=?
+2017-10-31 17:17:04 TRACE - binding parameter [1] as [TIMESTAMP] - [2017-10-31 18:17:04.808]
+2017-10-31 17:17:04 TRACE - binding parameter [2] as [BIGINT] - [233]
+2017-10-31 17:17:04 DEBUG - update public.tokens set expired_date=? where id=?
+2017-10-31 17:17:04 TRACE - binding parameter [1] as [TIMESTAMP] - [2017-11-04 17:17:04.808]
+2017-10-31 17:17:04 TRACE - binding parameter [2] as [BIGINT] - [234]
+2017-10-31 17:17:04 DEBUG - delete from public.tokens where id=?
+2017-10-31 17:17:04 TRACE - binding parameter [1] as [BIGINT] - [231]
+2017-10-31 17:17:04 DEBUG - delete from public.tokens where id=?
+2017-10-31 17:17:04 TRACE - binding parameter [1] as [BIGINT] - [232]
+2017-10-31 17:17:04 WARN  - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2017-10-31 17:17:04 DEBUG - select this_.id as id1_0_2_, this_.access_token as access_t3_0_2_, this_.refresh_token as refresh_4_0_2_, this_.user_id as user_id2_0_2_, tokensenti2_.id as id1_1_0_, tokensenti2_.expired_date as expired_2_1_0_, tokensenti2_.value as value3_1_0_, tokensenti3_.id as id1_1_1_, tokensenti3_.expired_date as expired_2_1_1_, tokensenti3_.value as value3_1_1_ from public.sessions this_ left outer join public.tokens tokensenti2_ on this_.access_token=tokensenti2_.id left outer join public.tokens tokensenti3_ on this_.refresh_token=tokensenti3_.id where this_.user_id=?
+2017-10-31 17:17:04 TRACE - binding parameter [1] as [BIGINT] - [1090215747480682833]
+2017-10-31 17:17:04 TRACE - extracted value ([id1_1_0_] : [BIGINT]) - [233]
+2017-10-31 17:17:04 TRACE - extracted value ([id1_1_1_] : [BIGINT]) - [234]
+2017-10-31 17:17:04 TRACE - extracted value ([id1_0_2_] : [BIGINT]) - [73]
+2017-10-31 17:17:04 TRACE - extracted value ([expired_2_1_0_] : [TIMESTAMP]) - [2017-10-31 18:17:04.808]
+2017-10-31 17:17:04 TRACE - extracted value ([value3_1_0_] : [OTHER]) - [914181db-f9be-4813-ba97-4c06aa225d63]
+2017-10-31 17:17:04 TRACE - extracted value ([expired_2_1_1_] : [TIMESTAMP]) - [2017-11-04 17:17:04.808]
+2017-10-31 17:17:04 TRACE - extracted value ([value3_1_1_] : [OTHER]) - [31762375-8fa2-413e-819d-e9cc18b43c54]
+2017-10-31 17:17:04 TRACE - extracted value ([access_t3_0_2_] : [BIGINT]) - [233]
+2017-10-31 17:17:04 TRACE - extracted value ([refresh_4_0_2_] : [BIGINT]) - [234]
+2017-10-31 17:17:04 TRACE - extracted value ([user_id2_0_2_] : [BIGINT]) - [1090215747480682833]
+2017-10-31 17:17:04 TRACE - Created collection wrapper: [generated.TokensEntity.sessionsById#233]
+2017-10-31 17:17:04 TRACE - Created collection wrapper: [generated.TokensEntity.sessionsById_0#233]
+2017-10-31 17:17:04 TRACE - Created collection wrapper: [generated.TokensEntity.sessionsById#234]
+2017-10-31 17:17:04 TRACE - Created collection wrapper: [generated.TokensEntity.sessionsById_0#234]
+2017-10-31 17:17:04 DEBUG - delete from public.sessions where id=?
+2017-10-31 17:17:04 TRACE - binding parameter [1] as [BIGINT] - [73]
+2017-10-31 17:17:04 DEBUG - delete from public.tokens where id=?
+2017-10-31 17:17:04 TRACE - binding parameter [1] as [BIGINT] - [233]
+2017-10-31 17:17:04 DEBUG - delete from public.tokens where id=?
+2017-10-31 17:17:04 TRACE - binding parameter [1] as [BIGINT] - [234]
+2017-11-05 11:58:57 INFO  - HHH000412: Hibernate Core {5.2.11.Final}
+2017-11-05 11:58:57 INFO  - HHH000206: hibernate.properties not found
+2017-11-05 11:58:58 INFO  - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-05 11:58:59 DEBUG - Adding type registration boolean -> org.hibernate.type.BooleanType@32aa5c1
+2017-11-05 11:58:59 DEBUG - Adding type registration boolean -> org.hibernate.type.BooleanType@32aa5c1
+2017-11-05 11:58:59 DEBUG - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@32aa5c1
+2017-11-05 11:58:59 DEBUG - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@11fdc502
+2017-11-05 11:58:59 DEBUG - Adding type registration true_false -> org.hibernate.type.TrueFalseType@76f72296
+2017-11-05 11:58:59 DEBUG - Adding type registration yes_no -> org.hibernate.type.YesNoType@d7aca49
+2017-11-05 11:58:59 DEBUG - Adding type registration byte -> org.hibernate.type.ByteType@7280520b
+2017-11-05 11:58:59 DEBUG - Adding type registration byte -> org.hibernate.type.ByteType@7280520b
+2017-11-05 11:58:59 DEBUG - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@7280520b
+2017-11-05 11:58:59 DEBUG - Adding type registration character -> org.hibernate.type.CharacterType@6809290f
+2017-11-05 11:58:59 DEBUG - Adding type registration char -> org.hibernate.type.CharacterType@6809290f
+2017-11-05 11:58:59 DEBUG - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@6809290f
+2017-11-05 11:58:59 DEBUG - Adding type registration short -> org.hibernate.type.ShortType@3c006f22
+2017-11-05 11:58:59 DEBUG - Adding type registration short -> org.hibernate.type.ShortType@3c006f22
+2017-11-05 11:58:59 DEBUG - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@3c006f22
+2017-11-05 11:58:59 DEBUG - Adding type registration integer -> org.hibernate.type.IntegerType@4d17264a
+2017-11-05 11:58:59 DEBUG - Adding type registration int -> org.hibernate.type.IntegerType@4d17264a
+2017-11-05 11:58:59 DEBUG - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@4d17264a
+2017-11-05 11:58:59 DEBUG - Adding type registration long -> org.hibernate.type.LongType@ee519ff
+2017-11-05 11:58:59 DEBUG - Adding type registration long -> org.hibernate.type.LongType@ee519ff
+2017-11-05 11:58:59 DEBUG - Adding type registration java.lang.Long -> org.hibernate.type.LongType@ee519ff
+2017-11-05 11:58:59 DEBUG - Adding type registration float -> org.hibernate.type.FloatType@71c91490
+2017-11-05 11:58:59 DEBUG - Adding type registration float -> org.hibernate.type.FloatType@71c91490
+2017-11-05 11:58:59 DEBUG - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@71c91490
+2017-11-05 11:58:59 DEBUG - Adding type registration double -> org.hibernate.type.DoubleType@6809355a
+2017-11-05 11:58:59 DEBUG - Adding type registration double -> org.hibernate.type.DoubleType@6809355a
+2017-11-05 11:58:59 DEBUG - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@6809355a
+2017-11-05 11:58:59 DEBUG - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@1211ae2e
+2017-11-05 11:58:59 DEBUG - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@1211ae2e
+2017-11-05 11:58:59 DEBUG - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@644fb13f
+2017-11-05 11:58:59 DEBUG - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@644fb13f
+2017-11-05 11:58:59 DEBUG - Adding type registration string -> org.hibernate.type.StringType@175900b9
+2017-11-05 11:58:59 DEBUG - Adding type registration java.lang.String -> org.hibernate.type.StringType@175900b9
+2017-11-05 11:58:59 DEBUG - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@64138522
+2017-11-05 11:58:59 DEBUG - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@4351bb69
+2017-11-05 11:58:59 DEBUG - Adding type registration url -> org.hibernate.type.UrlType@7b9a9594
+2017-11-05 11:58:59 DEBUG - Adding type registration java.net.URL -> org.hibernate.type.UrlType@7b9a9594
+2017-11-05 11:58:59 DEBUG - Adding type registration Duration -> org.hibernate.type.DurationType@68a7d3fc
+2017-11-05 11:58:59 DEBUG - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@68a7d3fc
+2017-11-05 11:58:59 DEBUG - Adding type registration Instant -> org.hibernate.type.InstantType@69dab07d
+2017-11-05 11:58:59 DEBUG - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@69dab07d
+2017-11-05 11:58:59 DEBUG - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@520c17bc
+2017-11-05 11:58:59 DEBUG - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@520c17bc
+2017-11-05 11:58:59 DEBUG - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@7f551b18
+2017-11-05 11:58:59 DEBUG - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@7f551b18
+2017-11-05 11:58:59 DEBUG - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@63d7578c
+2017-11-05 11:58:59 DEBUG - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@63d7578c
+2017-11-05 11:58:59 DEBUG - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@66609481
+2017-11-05 11:58:59 DEBUG - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@66609481
+2017-11-05 11:58:59 DEBUG - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@22f2ce4f
+2017-11-05 11:58:59 DEBUG - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@22f2ce4f
+2017-11-05 11:58:59 DEBUG - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@2c6ae286
+2017-11-05 11:58:59 DEBUG - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@2c6ae286
+2017-11-05 11:58:59 DEBUG - Adding type registration date -> org.hibernate.type.DateType@5b93fb43
+2017-11-05 11:58:59 DEBUG - Adding type registration java.sql.Date -> org.hibernate.type.DateType@5b93fb43
+2017-11-05 11:58:59 DEBUG - Adding type registration time -> org.hibernate.type.TimeType@6251e017
+2017-11-05 11:58:59 DEBUG - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@6251e017
+2017-11-05 11:58:59 DEBUG - Adding type registration timestamp -> org.hibernate.type.TimestampType@229c3ac8
+2017-11-05 11:58:59 DEBUG - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@229c3ac8
+2017-11-05 11:58:59 DEBUG - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@229c3ac8
+2017-11-05 11:58:59 DEBUG - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@2a6d649c
+2017-11-05 11:58:59 DEBUG - Adding type registration calendar -> org.hibernate.type.CalendarType@5fa5159b
+2017-11-05 11:58:59 DEBUG - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@5fa5159b
+2017-11-05 11:58:59 DEBUG - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@5fa5159b
+2017-11-05 11:58:59 DEBUG - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@2d223c76
+2017-11-05 11:58:59 DEBUG - Adding type registration locale -> org.hibernate.type.LocaleType@63f41d3
+2017-11-05 11:58:59 DEBUG - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@63f41d3
+2017-11-05 11:58:59 DEBUG - Adding type registration currency -> org.hibernate.type.CurrencyType@54ad23f9
+2017-11-05 11:58:59 DEBUG - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@54ad23f9
+2017-11-05 11:58:59 DEBUG - Adding type registration timezone -> org.hibernate.type.TimeZoneType@76929ee9
+2017-11-05 11:58:59 DEBUG - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@76929ee9
+2017-11-05 11:58:59 DEBUG - Adding type registration class -> org.hibernate.type.ClassType@1a4ba14c
+2017-11-05 11:58:59 DEBUG - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@1a4ba14c
+2017-11-05 11:58:59 DEBUG - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@647d9121
+2017-11-05 11:58:59 DEBUG - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@647d9121
+2017-11-05 11:58:59 DEBUG - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@167f42fc
+2017-11-05 11:58:59 DEBUG - Adding type registration binary -> org.hibernate.type.BinaryType@18d3c2e3
+2017-11-05 11:58:59 DEBUG - Adding type registration byte[] -> org.hibernate.type.BinaryType@18d3c2e3
+2017-11-05 11:58:59 DEBUG - Adding type registration [B -> org.hibernate.type.BinaryType@18d3c2e3
+2017-11-05 11:58:59 DEBUG - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@22fa7b86
+2017-11-05 11:58:59 DEBUG - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@22fa7b86
+2017-11-05 11:58:59 DEBUG - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@22fa7b86
+2017-11-05 11:58:59 DEBUG - Adding type registration row_version -> org.hibernate.type.RowVersionType@1ec431b1
+2017-11-05 11:58:59 DEBUG - Adding type registration image -> org.hibernate.type.ImageType@4232479d
+2017-11-05 11:58:59 DEBUG - Adding type registration characters -> org.hibernate.type.CharArrayType@77ce841c
+2017-11-05 11:58:59 DEBUG - Adding type registration char[] -> org.hibernate.type.CharArrayType@77ce841c
+2017-11-05 11:58:59 DEBUG - Adding type registration [C -> org.hibernate.type.CharArrayType@77ce841c
+2017-11-05 11:58:59 DEBUG - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@10822c9a
+2017-11-05 11:58:59 DEBUG - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@10822c9a
+2017-11-05 11:58:59 DEBUG - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@10822c9a
+2017-11-05 11:58:59 DEBUG - Adding type registration text -> org.hibernate.type.TextType@10e019fc
+2017-11-05 11:58:59 DEBUG - Adding type registration ntext -> org.hibernate.type.NTextType@63832880
+2017-11-05 11:58:59 DEBUG - Adding type registration blob -> org.hibernate.type.BlobType@2ff11208
+2017-11-05 11:58:59 DEBUG - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@2ff11208
+2017-11-05 11:58:59 DEBUG - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@79247a92
+2017-11-05 11:58:59 DEBUG - Adding type registration clob -> org.hibernate.type.ClobType@5e83f94
+2017-11-05 11:58:59 DEBUG - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@5e83f94
+2017-11-05 11:58:59 DEBUG - Adding type registration nclob -> org.hibernate.type.NClobType@5ad17fc1
+2017-11-05 11:58:59 DEBUG - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@5ad17fc1
+2017-11-05 11:58:59 DEBUG - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@4bc11944
+2017-11-05 11:58:59 DEBUG - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@b180b
+2017-11-05 11:58:59 DEBUG - Adding type registration serializable -> org.hibernate.type.SerializableType@1aab5392
+2017-11-05 11:58:59 DEBUG - Adding type registration object -> org.hibernate.type.ObjectType@3b49f4cd
+2017-11-05 11:58:59 DEBUG - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@3b49f4cd
+2017-11-05 11:58:59 DEBUG - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@6f21515c
+2017-11-05 11:58:59 DEBUG - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@715579b4
+2017-11-05 11:58:59 DEBUG - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@7805dc19
+2017-11-05 11:58:59 DEBUG - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@4c419828
+2017-11-05 11:58:59 DEBUG - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@59502d31
+2017-11-05 11:58:59 DEBUG - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@11c758ad
+2017-11-05 11:58:59 DEBUG - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@58ba9697
+2017-11-05 11:58:59 DEBUG - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@1aae1f32
+2017-11-05 11:58:59 WARN  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-05 11:58:59 INFO  - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/auth]
+2017-11-05 11:58:59 INFO  - HHH10001001: Connection properties: {user=postgres, password=****}
+2017-11-05 11:58:59 INFO  - HHH10001003: Autocommit mode: false
+2017-11-05 11:58:59 INFO  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-05 12:00:10 INFO  - HHH000412: Hibernate Core {5.2.11.Final}
+2017-11-05 12:00:10 INFO  - HHH000206: hibernate.properties not found
+2017-11-05 12:00:13 INFO  - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-05 12:00:41 DEBUG - Adding type registration boolean -> org.hibernate.type.BooleanType@13453844
+2017-11-05 12:00:41 DEBUG - Adding type registration boolean -> org.hibernate.type.BooleanType@13453844
+2017-11-05 12:00:41 DEBUG - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@13453844
+2017-11-05 12:00:41 DEBUG - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@32f81e3f
+2017-11-05 12:00:41 DEBUG - Adding type registration true_false -> org.hibernate.type.TrueFalseType@31589f24
+2017-11-05 12:00:41 DEBUG - Adding type registration yes_no -> org.hibernate.type.YesNoType@52569a3d
+2017-11-05 12:00:41 DEBUG - Adding type registration byte -> org.hibernate.type.ByteType@4d08a58b
+2017-11-05 12:00:41 DEBUG - Adding type registration byte -> org.hibernate.type.ByteType@4d08a58b
+2017-11-05 12:00:41 DEBUG - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@4d08a58b
+2017-11-05 12:00:42 DEBUG - Adding type registration character -> org.hibernate.type.CharacterType@6fa1f345
+2017-11-05 12:00:42 DEBUG - Adding type registration char -> org.hibernate.type.CharacterType@6fa1f345
+2017-11-05 12:00:42 DEBUG - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@6fa1f345
+2017-11-05 12:00:42 DEBUG - Adding type registration short -> org.hibernate.type.ShortType@5d9ec90f
+2017-11-05 12:00:42 DEBUG - Adding type registration short -> org.hibernate.type.ShortType@5d9ec90f
+2017-11-05 12:00:42 DEBUG - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@5d9ec90f
+2017-11-05 12:00:42 DEBUG - Adding type registration integer -> org.hibernate.type.IntegerType@11d9a03c
+2017-11-05 12:00:42 DEBUG - Adding type registration int -> org.hibernate.type.IntegerType@11d9a03c
+2017-11-05 12:00:42 DEBUG - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@11d9a03c
+2017-11-05 12:00:42 DEBUG - Adding type registration long -> org.hibernate.type.LongType@3ee8abdc
+2017-11-05 12:00:42 DEBUG - Adding type registration long -> org.hibernate.type.LongType@3ee8abdc
+2017-11-05 12:00:42 DEBUG - Adding type registration java.lang.Long -> org.hibernate.type.LongType@3ee8abdc
+2017-11-05 12:00:42 DEBUG - Adding type registration float -> org.hibernate.type.FloatType@1f5fd604
+2017-11-05 12:00:42 DEBUG - Adding type registration float -> org.hibernate.type.FloatType@1f5fd604
+2017-11-05 12:00:42 DEBUG - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@1f5fd604
+2017-11-05 12:00:42 DEBUG - Adding type registration double -> org.hibernate.type.DoubleType@594d4a5c
+2017-11-05 12:00:42 DEBUG - Adding type registration double -> org.hibernate.type.DoubleType@594d4a5c
+2017-11-05 12:00:42 DEBUG - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@594d4a5c
+2017-11-05 12:00:42 DEBUG - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@56836eba
+2017-11-05 12:00:42 DEBUG - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@56836eba
+2017-11-05 12:00:42 DEBUG - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@7ff1a53f
+2017-11-05 12:00:42 DEBUG - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@7ff1a53f
+2017-11-05 12:00:42 DEBUG - Adding type registration string -> org.hibernate.type.StringType@48f4a226
+2017-11-05 12:00:42 DEBUG - Adding type registration java.lang.String -> org.hibernate.type.StringType@48f4a226
+2017-11-05 12:00:42 DEBUG - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@eb2f712
+2017-11-05 12:00:42 DEBUG - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@35686e1b
+2017-11-05 12:00:42 DEBUG - Adding type registration url -> org.hibernate.type.UrlType@1b5005cb
+2017-11-05 12:00:42 DEBUG - Adding type registration java.net.URL -> org.hibernate.type.UrlType@1b5005cb
+2017-11-05 12:00:42 DEBUG - Adding type registration Duration -> org.hibernate.type.DurationType@78b6388d
+2017-11-05 12:00:42 DEBUG - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@78b6388d
+2017-11-05 12:00:42 DEBUG - Adding type registration Instant -> org.hibernate.type.InstantType@75f9ae8c
+2017-11-05 12:00:42 DEBUG - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@75f9ae8c
+2017-11-05 12:00:42 DEBUG - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@1490c162
+2017-11-05 12:00:42 DEBUG - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@1490c162
+2017-11-05 12:00:43 DEBUG - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@546fe974
+2017-11-05 12:00:43 DEBUG - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@546fe974
+2017-11-05 12:00:43 DEBUG - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@31228961
+2017-11-05 12:00:43 DEBUG - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@31228961
+2017-11-05 12:00:43 DEBUG - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@192d92fc
+2017-11-05 12:00:43 DEBUG - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@192d92fc
+2017-11-05 12:00:43 DEBUG - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@2f06470e
+2017-11-05 12:00:43 DEBUG - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@2f06470e
+2017-11-05 12:00:43 DEBUG - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@22d90235
+2017-11-05 12:00:43 DEBUG - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@22d90235
+2017-11-05 12:00:43 DEBUG - Adding type registration date -> org.hibernate.type.DateType@36ad77c7
+2017-11-05 12:00:43 DEBUG - Adding type registration java.sql.Date -> org.hibernate.type.DateType@36ad77c7
+2017-11-05 12:00:43 DEBUG - Adding type registration time -> org.hibernate.type.TimeType@fc7c112
+2017-11-05 12:00:43 DEBUG - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@fc7c112
+2017-11-05 12:00:43 DEBUG - Adding type registration timestamp -> org.hibernate.type.TimestampType@4440d0af
+2017-11-05 12:00:43 DEBUG - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@4440d0af
+2017-11-05 12:00:43 DEBUG - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@4440d0af
+2017-11-05 12:00:43 DEBUG - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@22c905e
+2017-11-05 12:00:43 DEBUG - Adding type registration calendar -> org.hibernate.type.CalendarType@556b744c
+2017-11-05 12:00:43 DEBUG - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@556b744c
+2017-11-05 12:00:43 DEBUG - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@556b744c
+2017-11-05 12:00:43 DEBUG - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@6a5cebf1
+2017-11-05 12:00:43 DEBUG - Adding type registration locale -> org.hibernate.type.LocaleType@79d17762
+2017-11-05 12:00:43 DEBUG - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@79d17762
+2017-11-05 12:00:43 DEBUG - Adding type registration currency -> org.hibernate.type.CurrencyType@1eeb1551
+2017-11-05 12:00:43 DEBUG - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@1eeb1551
+2017-11-05 12:00:43 DEBUG - Adding type registration timezone -> org.hibernate.type.TimeZoneType@506d6afe
+2017-11-05 12:00:43 DEBUG - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@506d6afe
+2017-11-05 12:00:43 DEBUG - Adding type registration class -> org.hibernate.type.ClassType@5fdd134e
+2017-11-05 12:00:43 DEBUG - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@5fdd134e
+2017-11-05 12:00:43 DEBUG - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@1d7c3038
+2017-11-05 12:00:43 DEBUG - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@1d7c3038
+2017-11-05 12:00:43 DEBUG - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@60b520b3
+2017-11-05 12:00:43 DEBUG - Adding type registration binary -> org.hibernate.type.BinaryType@5fde165
+2017-11-05 12:00:43 DEBUG - Adding type registration byte[] -> org.hibernate.type.BinaryType@5fde165
+2017-11-05 12:00:43 DEBUG - Adding type registration [B -> org.hibernate.type.BinaryType@5fde165
+2017-11-05 12:00:44 DEBUG - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@5a9db816
+2017-11-05 12:00:44 DEBUG - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@5a9db816
+2017-11-05 12:00:44 DEBUG - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@5a9db816
+2017-11-05 12:00:44 DEBUG - Adding type registration row_version -> org.hibernate.type.RowVersionType@2ba0ddfe
+2017-11-05 12:00:44 DEBUG - Adding type registration image -> org.hibernate.type.ImageType@55561c40
+2017-11-05 12:00:44 DEBUG - Adding type registration characters -> org.hibernate.type.CharArrayType@4ca87447
+2017-11-05 12:00:44 DEBUG - Adding type registration char[] -> org.hibernate.type.CharArrayType@4ca87447
+2017-11-05 12:00:44 DEBUG - Adding type registration [C -> org.hibernate.type.CharArrayType@4ca87447
+2017-11-05 12:00:44 DEBUG - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@621ee752
+2017-11-05 12:00:44 DEBUG - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@621ee752
+2017-11-05 12:00:44 DEBUG - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@621ee752
+2017-11-05 12:00:44 DEBUG - Adding type registration text -> org.hibernate.type.TextType@1ec8aff4
+2017-11-05 12:00:44 DEBUG - Adding type registration ntext -> org.hibernate.type.NTextType@3fd387ca
+2017-11-05 12:00:44 DEBUG - Adding type registration blob -> org.hibernate.type.BlobType@5af23522
+2017-11-05 12:00:44 DEBUG - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@5af23522
+2017-11-05 12:00:44 DEBUG - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@31ec7945
+2017-11-05 12:00:44 DEBUG - Adding type registration clob -> org.hibernate.type.ClobType@9e7bf4d
+2017-11-05 12:00:44 DEBUG - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@9e7bf4d
+2017-11-05 12:00:44 DEBUG - Adding type registration nclob -> org.hibernate.type.NClobType@550d532
+2017-11-05 12:00:44 DEBUG - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@550d532
+2017-11-05 12:00:44 DEBUG - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@37ad2c71
+2017-11-05 12:00:44 DEBUG - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@dc34296
+2017-11-05 12:00:44 DEBUG - Adding type registration serializable -> org.hibernate.type.SerializableType@7f7f28b
+2017-11-05 12:00:44 DEBUG - Adding type registration object -> org.hibernate.type.ObjectType@242ebb24
+2017-11-05 12:00:44 DEBUG - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@242ebb24
+2017-11-05 12:00:44 DEBUG - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@18679c4c
+2017-11-05 12:00:44 DEBUG - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@7a43ca72
+2017-11-05 12:00:44 DEBUG - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@19834d90
+2017-11-05 12:00:44 DEBUG - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@31da694e
+2017-11-05 12:00:44 DEBUG - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@1e246306
+2017-11-05 12:00:45 DEBUG - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@5892bfab
+2017-11-05 12:00:45 DEBUG - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@3a93d62e
+2017-11-05 12:00:45 DEBUG - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@4ce70599
+2017-11-05 12:00:45 WARN  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-05 12:00:45 INFO  - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/auth]
+2017-11-05 12:00:45 INFO  - HHH10001001: Connection properties: {user=postgres, password=****}
+2017-11-05 12:00:45 INFO  - HHH10001003: Autocommit mode: false
+2017-11-05 12:00:45 INFO  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-05 12:23:17 INFO  - HHH000412: Hibernate Core {5.2.11.Final}
+2017-11-05 12:23:17 INFO  - HHH000206: hibernate.properties not found
+2017-11-05 12:23:18 INFO  - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-05 12:23:20 DEBUG - Adding type registration boolean -> org.hibernate.type.BooleanType@7284f403
+2017-11-05 12:23:20 DEBUG - Adding type registration boolean -> org.hibernate.type.BooleanType@7284f403
+2017-11-05 12:23:20 DEBUG - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@7284f403
+2017-11-05 12:23:20 DEBUG - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@6e45865c
+2017-11-05 12:23:20 DEBUG - Adding type registration true_false -> org.hibernate.type.TrueFalseType@2562ac91
+2017-11-05 12:23:20 DEBUG - Adding type registration yes_no -> org.hibernate.type.YesNoType@d9ac83b
+2017-11-05 12:23:20 DEBUG - Adding type registration byte -> org.hibernate.type.ByteType@6b60931e
+2017-11-05 12:23:20 DEBUG - Adding type registration byte -> org.hibernate.type.ByteType@6b60931e
+2017-11-05 12:23:20 DEBUG - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@6b60931e
+2017-11-05 12:23:20 DEBUG - Adding type registration character -> org.hibernate.type.CharacterType@72d5bb6a
+2017-11-05 12:23:20 DEBUG - Adding type registration char -> org.hibernate.type.CharacterType@72d5bb6a
+2017-11-05 12:23:20 DEBUG - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@72d5bb6a
+2017-11-05 12:23:20 DEBUG - Adding type registration short -> org.hibernate.type.ShortType@3332493b
+2017-11-05 12:23:20 DEBUG - Adding type registration short -> org.hibernate.type.ShortType@3332493b
+2017-11-05 12:23:20 DEBUG - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@3332493b
+2017-11-05 12:23:20 DEBUG - Adding type registration integer -> org.hibernate.type.IntegerType@1e8fd129
+2017-11-05 12:23:20 DEBUG - Adding type registration int -> org.hibernate.type.IntegerType@1e8fd129
+2017-11-05 12:23:20 DEBUG - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@1e8fd129
+2017-11-05 12:23:20 DEBUG - Adding type registration long -> org.hibernate.type.LongType@5e1962d3
+2017-11-05 12:23:20 DEBUG - Adding type registration long -> org.hibernate.type.LongType@5e1962d3
+2017-11-05 12:23:20 DEBUG - Adding type registration java.lang.Long -> org.hibernate.type.LongType@5e1962d3
+2017-11-05 12:23:20 DEBUG - Adding type registration float -> org.hibernate.type.FloatType@594ab0a2
+2017-11-05 12:23:20 DEBUG - Adding type registration float -> org.hibernate.type.FloatType@594ab0a2
+2017-11-05 12:23:20 DEBUG - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@594ab0a2
+2017-11-05 12:23:20 DEBUG - Adding type registration double -> org.hibernate.type.DoubleType@1318f00f
+2017-11-05 12:23:20 DEBUG - Adding type registration double -> org.hibernate.type.DoubleType@1318f00f
+2017-11-05 12:23:20 DEBUG - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@1318f00f
+2017-11-05 12:23:20 DEBUG - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@51aacd0c
+2017-11-05 12:23:20 DEBUG - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@51aacd0c
+2017-11-05 12:23:20 DEBUG - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@425cbf87
+2017-11-05 12:23:20 DEBUG - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@425cbf87
+2017-11-05 12:23:20 DEBUG - Adding type registration string -> org.hibernate.type.StringType@7cb6e449
+2017-11-05 12:23:20 DEBUG - Adding type registration java.lang.String -> org.hibernate.type.StringType@7cb6e449
+2017-11-05 12:23:20 DEBUG - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@19975e7a
+2017-11-05 12:23:20 DEBUG - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@7b608175
+2017-11-05 12:23:20 DEBUG - Adding type registration url -> org.hibernate.type.UrlType@6fc8c17f
+2017-11-05 12:23:20 DEBUG - Adding type registration java.net.URL -> org.hibernate.type.UrlType@6fc8c17f
+2017-11-05 12:23:20 DEBUG - Adding type registration Duration -> org.hibernate.type.DurationType@5e2390d1
+2017-11-05 12:23:20 DEBUG - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@5e2390d1
+2017-11-05 12:23:20 DEBUG - Adding type registration Instant -> org.hibernate.type.InstantType@1db866c7
+2017-11-05 12:23:20 DEBUG - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@1db866c7
+2017-11-05 12:23:20 DEBUG - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@3116f130
+2017-11-05 12:23:20 DEBUG - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@3116f130
+2017-11-05 12:23:20 DEBUG - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@d400a4e
+2017-11-05 12:23:20 DEBUG - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@d400a4e
+2017-11-05 12:23:20 DEBUG - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@4614ba01
+2017-11-05 12:23:20 DEBUG - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@4614ba01
+2017-11-05 12:23:20 DEBUG - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@2918b798
+2017-11-05 12:23:20 DEBUG - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@2918b798
+2017-11-05 12:23:20 DEBUG - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@53a61662
+2017-11-05 12:23:20 DEBUG - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@53a61662
+2017-11-05 12:23:20 DEBUG - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@6bfe139f
+2017-11-05 12:23:20 DEBUG - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@6bfe139f
+2017-11-05 12:23:20 DEBUG - Adding type registration date -> org.hibernate.type.DateType@68a4e197
+2017-11-05 12:23:20 DEBUG - Adding type registration java.sql.Date -> org.hibernate.type.DateType@68a4e197
+2017-11-05 12:23:20 DEBUG - Adding type registration time -> org.hibernate.type.TimeType@5d0a4f18
+2017-11-05 12:23:20 DEBUG - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@5d0a4f18
+2017-11-05 12:23:20 DEBUG - Adding type registration timestamp -> org.hibernate.type.TimestampType@4514f6b8
+2017-11-05 12:23:20 DEBUG - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@4514f6b8
+2017-11-05 12:23:20 DEBUG - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@4514f6b8
+2017-11-05 12:23:20 DEBUG - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@45788cbd
+2017-11-05 12:23:20 DEBUG - Adding type registration calendar -> org.hibernate.type.CalendarType@3c53d844
+2017-11-05 12:23:20 DEBUG - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@3c53d844
+2017-11-05 12:23:20 DEBUG - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@3c53d844
+2017-11-05 12:23:20 DEBUG - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@62ed7637
+2017-11-05 12:23:20 DEBUG - Adding type registration locale -> org.hibernate.type.LocaleType@6c198f87
+2017-11-05 12:23:20 DEBUG - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@6c198f87
+2017-11-05 12:23:20 DEBUG - Adding type registration currency -> org.hibernate.type.CurrencyType@4b816fa2
+2017-11-05 12:23:20 DEBUG - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@4b816fa2
+2017-11-05 12:23:20 DEBUG - Adding type registration timezone -> org.hibernate.type.TimeZoneType@4a6d6079
+2017-11-05 12:23:20 DEBUG - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@4a6d6079
+2017-11-05 12:23:20 DEBUG - Adding type registration class -> org.hibernate.type.ClassType@629ef9b0
+2017-11-05 12:23:20 DEBUG - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@629ef9b0
+2017-11-05 12:23:20 DEBUG - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@771f78c2
+2017-11-05 12:23:20 DEBUG - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@771f78c2
+2017-11-05 12:23:20 DEBUG - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@2d96f2dd
+2017-11-05 12:23:20 DEBUG - Adding type registration binary -> org.hibernate.type.BinaryType@30680799
+2017-11-05 12:23:20 DEBUG - Adding type registration byte[] -> org.hibernate.type.BinaryType@30680799
+2017-11-05 12:23:20 DEBUG - Adding type registration [B -> org.hibernate.type.BinaryType@30680799
+2017-11-05 12:23:20 DEBUG - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@1368b5d2
+2017-11-05 12:23:20 DEBUG - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@1368b5d2
+2017-11-05 12:23:20 DEBUG - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@1368b5d2
+2017-11-05 12:23:20 DEBUG - Adding type registration row_version -> org.hibernate.type.RowVersionType@6515a475
+2017-11-05 12:23:20 DEBUG - Adding type registration image -> org.hibernate.type.ImageType@2830e6f2
+2017-11-05 12:23:20 DEBUG - Adding type registration characters -> org.hibernate.type.CharArrayType@2110f142
+2017-11-05 12:23:20 DEBUG - Adding type registration char[] -> org.hibernate.type.CharArrayType@2110f142
+2017-11-05 12:23:20 DEBUG - Adding type registration [C -> org.hibernate.type.CharArrayType@2110f142
+2017-11-05 12:23:20 DEBUG - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@16bf2aa6
+2017-11-05 12:23:20 DEBUG - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@16bf2aa6
+2017-11-05 12:23:20 DEBUG - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@16bf2aa6
+2017-11-05 12:23:20 DEBUG - Adding type registration text -> org.hibernate.type.TextType@2de4b429
+2017-11-05 12:23:20 DEBUG - Adding type registration ntext -> org.hibernate.type.NTextType@3738e458
+2017-11-05 12:23:20 DEBUG - Adding type registration blob -> org.hibernate.type.BlobType@7fbe5cc0
+2017-11-05 12:23:20 DEBUG - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@7fbe5cc0
+2017-11-05 12:23:20 DEBUG - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@6d684d0b
+2017-11-05 12:23:20 DEBUG - Adding type registration clob -> org.hibernate.type.ClobType@19bae12
+2017-11-05 12:23:20 DEBUG - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@19bae12
+2017-11-05 12:23:20 DEBUG - Adding type registration nclob -> org.hibernate.type.NClobType@4285ac72
+2017-11-05 12:23:20 DEBUG - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@4285ac72
+2017-11-05 12:23:20 DEBUG - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@40466891
+2017-11-05 12:23:20 DEBUG - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@325ab1d9
+2017-11-05 12:23:20 DEBUG - Adding type registration serializable -> org.hibernate.type.SerializableType@1ebd81b
+2017-11-05 12:23:20 DEBUG - Adding type registration object -> org.hibernate.type.ObjectType@7ed88e4f
+2017-11-05 12:23:20 DEBUG - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@7ed88e4f
+2017-11-05 12:23:20 DEBUG - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@2e2af8f2
+2017-11-05 12:23:20 DEBUG - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@c0a72d
+2017-11-05 12:23:20 DEBUG - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@4454dd01
+2017-11-05 12:23:20 DEBUG - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@4738e5f6
+2017-11-05 12:23:20 DEBUG - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@1ae07536
+2017-11-05 12:23:20 DEBUG - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@7e8d1efd
+2017-11-05 12:23:20 DEBUG - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@6ff41955
+2017-11-05 12:23:20 DEBUG - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@5532bd7d
+2017-11-05 12:23:20 WARN  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-05 12:23:20 INFO  - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/auth]
+2017-11-05 12:23:20 INFO  - HHH10001001: Connection properties: {user=postgres, password=****}
+2017-11-05 12:23:20 INFO  - HHH10001003: Autocommit mode: false
+2017-11-05 12:23:20 INFO  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-05 12:23:20 INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2017-11-05 12:23:20 INFO  - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-11-05 12:23:20 DEBUG - Adding type registration pg-uuid -> org.hibernate.type.PostgresUUIDType@4634eeae
+2017-11-05 12:23:20 DEBUG - Adding type registration java.util.UUID -> org.hibernate.type.PostgresUUIDType@4634eeae
+2017-11-05 12:23:20 INFO  - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@771f78c2
+2017-11-05 12:23:20 TRACE - Scoping types to session factory org.hibernate.internal.SessionFactoryImpl@5c40200c
+2017-11-05 12:23:21 DEBUG - insert into public.tokens (expired_date) values (?)
+2017-11-05 12:23:21 TRACE - binding parameter [1] as [TIMESTAMP] - [2017-11-05 13:23:17.465]
+2017-11-05 12:23:21 DEBUG - Adding type registration boolean -> org.hibernate.type.BooleanType@7284f403
+2017-11-05 12:23:21 DEBUG - Adding type registration boolean -> org.hibernate.type.BooleanType@7284f403
+2017-11-05 12:23:21 DEBUG - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@7284f403
+2017-11-05 12:23:21 DEBUG - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@6e45865c
+2017-11-05 12:23:21 DEBUG - Adding type registration true_false -> org.hibernate.type.TrueFalseType@2562ac91
+2017-11-05 12:23:21 DEBUG - Adding type registration yes_no -> org.hibernate.type.YesNoType@d9ac83b
+2017-11-05 12:23:21 DEBUG - Adding type registration byte -> org.hibernate.type.ByteType@6b60931e
+2017-11-05 12:23:21 DEBUG - Adding type registration byte -> org.hibernate.type.ByteType@6b60931e
+2017-11-05 12:23:21 DEBUG - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@6b60931e
+2017-11-05 12:23:21 DEBUG - Adding type registration character -> org.hibernate.type.CharacterType@72d5bb6a
+2017-11-05 12:23:21 DEBUG - Adding type registration char -> org.hibernate.type.CharacterType@72d5bb6a
+2017-11-05 12:23:21 DEBUG - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@72d5bb6a
+2017-11-05 12:23:21 DEBUG - Adding type registration short -> org.hibernate.type.ShortType@3332493b
+2017-11-05 12:23:21 DEBUG - Adding type registration short -> org.hibernate.type.ShortType@3332493b
+2017-11-05 12:23:21 DEBUG - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@3332493b
+2017-11-05 12:23:21 DEBUG - Adding type registration integer -> org.hibernate.type.IntegerType@1e8fd129
+2017-11-05 12:23:21 DEBUG - Adding type registration int -> org.hibernate.type.IntegerType@1e8fd129
+2017-11-05 12:23:21 DEBUG - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@1e8fd129
+2017-11-05 12:23:21 DEBUG - Adding type registration long -> org.hibernate.type.LongType@5e1962d3
+2017-11-05 12:23:21 DEBUG - Adding type registration long -> org.hibernate.type.LongType@5e1962d3
+2017-11-05 12:23:21 DEBUG - Adding type registration java.lang.Long -> org.hibernate.type.LongType@5e1962d3
+2017-11-05 12:23:21 DEBUG - Adding type registration float -> org.hibernate.type.FloatType@594ab0a2
+2017-11-05 12:23:21 DEBUG - Adding type registration float -> org.hibernate.type.FloatType@594ab0a2
+2017-11-05 12:23:21 DEBUG - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@594ab0a2
+2017-11-05 12:23:21 DEBUG - Adding type registration double -> org.hibernate.type.DoubleType@1318f00f
+2017-11-05 12:23:21 DEBUG - Adding type registration double -> org.hibernate.type.DoubleType@1318f00f
+2017-11-05 12:23:21 DEBUG - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@1318f00f
+2017-11-05 12:23:21 DEBUG - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@51aacd0c
+2017-11-05 12:23:21 DEBUG - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@51aacd0c
+2017-11-05 12:23:21 DEBUG - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@425cbf87
+2017-11-05 12:23:21 DEBUG - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@425cbf87
+2017-11-05 12:23:21 DEBUG - Adding type registration string -> org.hibernate.type.StringType@7cb6e449
+2017-11-05 12:23:21 DEBUG - Adding type registration java.lang.String -> org.hibernate.type.StringType@7cb6e449
+2017-11-05 12:23:21 DEBUG - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@19975e7a
+2017-11-05 12:23:21 DEBUG - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@7b608175
+2017-11-05 12:23:21 DEBUG - Adding type registration url -> org.hibernate.type.UrlType@6fc8c17f
+2017-11-05 12:23:21 DEBUG - Adding type registration java.net.URL -> org.hibernate.type.UrlType@6fc8c17f
+2017-11-05 12:23:21 DEBUG - Adding type registration Duration -> org.hibernate.type.DurationType@5e2390d1
+2017-11-05 12:23:21 DEBUG - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@5e2390d1
+2017-11-05 12:23:21 DEBUG - Adding type registration Instant -> org.hibernate.type.InstantType@1db866c7
+2017-11-05 12:23:21 DEBUG - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@1db866c7
+2017-11-05 12:23:21 DEBUG - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@3116f130
+2017-11-05 12:23:21 DEBUG - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@3116f130
+2017-11-05 12:23:21 DEBUG - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@d400a4e
+2017-11-05 12:23:21 DEBUG - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@d400a4e
+2017-11-05 12:23:21 DEBUG - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@4614ba01
+2017-11-05 12:23:21 DEBUG - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@4614ba01
+2017-11-05 12:23:21 DEBUG - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@2918b798
+2017-11-05 12:23:21 DEBUG - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@2918b798
+2017-11-05 12:23:21 DEBUG - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@53a61662
+2017-11-05 12:23:21 DEBUG - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@53a61662
+2017-11-05 12:23:21 DEBUG - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@6bfe139f
+2017-11-05 12:23:21 DEBUG - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@6bfe139f
+2017-11-05 12:23:21 DEBUG - Adding type registration date -> org.hibernate.type.DateType@68a4e197
+2017-11-05 12:23:21 DEBUG - Adding type registration java.sql.Date -> org.hibernate.type.DateType@68a4e197
+2017-11-05 12:23:21 DEBUG - Adding type registration time -> org.hibernate.type.TimeType@5d0a4f18
+2017-11-05 12:23:21 DEBUG - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@5d0a4f18
+2017-11-05 12:23:21 DEBUG - Adding type registration timestamp -> org.hibernate.type.TimestampType@4514f6b8
+2017-11-05 12:23:21 DEBUG - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@4514f6b8
+2017-11-05 12:23:21 DEBUG - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@4514f6b8
+2017-11-05 12:23:21 DEBUG - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@45788cbd
+2017-11-05 12:23:21 DEBUG - Adding type registration calendar -> org.hibernate.type.CalendarType@3c53d844
+2017-11-05 12:23:21 DEBUG - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@3c53d844
+2017-11-05 12:23:21 DEBUG - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@3c53d844
+2017-11-05 12:23:21 DEBUG - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@62ed7637
+2017-11-05 12:23:21 DEBUG - Adding type registration locale -> org.hibernate.type.LocaleType@6c198f87
+2017-11-05 12:23:21 DEBUG - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@6c198f87
+2017-11-05 12:23:21 DEBUG - Adding type registration currency -> org.hibernate.type.CurrencyType@4b816fa2
+2017-11-05 12:23:21 DEBUG - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@4b816fa2
+2017-11-05 12:23:21 DEBUG - Adding type registration timezone -> org.hibernate.type.TimeZoneType@4a6d6079
+2017-11-05 12:23:21 DEBUG - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@4a6d6079
+2017-11-05 12:23:21 DEBUG - Adding type registration class -> org.hibernate.type.ClassType@629ef9b0
+2017-11-05 12:23:21 DEBUG - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@629ef9b0
+2017-11-05 12:23:21 DEBUG - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@771f78c2
+2017-11-05 12:23:21 DEBUG - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@771f78c2
+2017-11-05 12:23:21 DEBUG - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@2d96f2dd
+2017-11-05 12:23:21 DEBUG - Adding type registration binary -> org.hibernate.type.BinaryType@30680799
+2017-11-05 12:23:21 DEBUG - Adding type registration byte[] -> org.hibernate.type.BinaryType@30680799
+2017-11-05 12:23:21 DEBUG - Adding type registration [B -> org.hibernate.type.BinaryType@30680799
+2017-11-05 12:23:21 DEBUG - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@1368b5d2
+2017-11-05 12:23:21 DEBUG - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@1368b5d2
+2017-11-05 12:23:21 DEBUG - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@1368b5d2
+2017-11-05 12:23:21 DEBUG - Adding type registration row_version -> org.hibernate.type.RowVersionType@6515a475
+2017-11-05 12:23:21 DEBUG - Adding type registration image -> org.hibernate.type.ImageType@2830e6f2
+2017-11-05 12:23:21 DEBUG - Adding type registration characters -> org.hibernate.type.CharArrayType@2110f142
+2017-11-05 12:23:21 DEBUG - Adding type registration char[] -> org.hibernate.type.CharArrayType@2110f142
+2017-11-05 12:23:21 DEBUG - Adding type registration [C -> org.hibernate.type.CharArrayType@2110f142
+2017-11-05 12:23:21 DEBUG - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@16bf2aa6
+2017-11-05 12:23:21 DEBUG - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@16bf2aa6
+2017-11-05 12:23:21 DEBUG - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@16bf2aa6
+2017-11-05 12:23:21 DEBUG - Adding type registration text -> org.hibernate.type.TextType@2de4b429
+2017-11-05 12:23:21 DEBUG - Adding type registration ntext -> org.hibernate.type.NTextType@3738e458
+2017-11-05 12:23:21 DEBUG - Adding type registration blob -> org.hibernate.type.BlobType@7fbe5cc0
+2017-11-05 12:23:21 DEBUG - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@7fbe5cc0
+2017-11-05 12:23:21 DEBUG - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@6d684d0b
+2017-11-05 12:23:21 DEBUG - Adding type registration clob -> org.hibernate.type.ClobType@19bae12
+2017-11-05 12:23:21 DEBUG - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@19bae12
+2017-11-05 12:23:21 DEBUG - Adding type registration nclob -> org.hibernate.type.NClobType@4285ac72
+2017-11-05 12:23:21 DEBUG - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@4285ac72
+2017-11-05 12:23:21 DEBUG - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@40466891
+2017-11-05 12:23:21 DEBUG - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@325ab1d9
+2017-11-05 12:23:21 DEBUG - Adding type registration serializable -> org.hibernate.type.SerializableType@1ebd81b
+2017-11-05 12:23:21 DEBUG - Adding type registration object -> org.hibernate.type.ObjectType@7ed88e4f
+2017-11-05 12:23:21 DEBUG - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@7ed88e4f
+2017-11-05 12:23:21 DEBUG - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@25d95abc
+2017-11-05 12:23:21 DEBUG - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@222a99a3
+2017-11-05 12:23:21 DEBUG - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@1e00a7d0
+2017-11-05 12:23:21 DEBUG - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@1d931293
+2017-11-05 12:23:21 DEBUG - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@6f4355ef
+2017-11-05 12:23:21 DEBUG - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@1275ea40
+2017-11-05 12:23:21 DEBUG - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@215833a2
+2017-11-05 12:23:21 DEBUG - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@30346cfc
+2017-11-05 12:23:21 WARN  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-05 12:23:21 INFO  - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/auth]
+2017-11-05 12:23:21 INFO  - HHH10001001: Connection properties: {user=postgres, password=****}
+2017-11-05 12:23:21 INFO  - HHH10001003: Autocommit mode: false
+2017-11-05 12:23:21 INFO  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-05 12:23:21 INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2017-11-05 12:23:22 INFO  - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-11-05 12:23:22 DEBUG - Adding type registration pg-uuid -> org.hibernate.type.PostgresUUIDType@4634eeae
+2017-11-05 12:23:22 DEBUG - Adding type registration java.util.UUID -> org.hibernate.type.PostgresUUIDType@4634eeae
+2017-11-05 12:23:22 INFO  - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@771f78c2
+2017-11-05 12:23:22 TRACE - Scoping types to session factory org.hibernate.internal.SessionFactoryImpl@29eaa2db
+2017-11-05 12:23:22 DEBUG - select tokensenti0_.id as id1_1_0_, tokensenti0_.expired_date as expired_2_1_0_, tokensenti0_.value as value3_1_0_ from public.tokens tokensenti0_ where tokensenti0_.id=?
+2017-11-05 12:23:22 TRACE - binding parameter [1] as [BIGINT] - [235]
+2017-11-05 12:23:22 TRACE - extracted value ([expired_2_1_0_] : [TIMESTAMP]) - [2017-11-05 13:23:17.465]
+2017-11-05 12:23:22 TRACE - extracted value ([value3_1_0_] : [OTHER]) - [f02862ed-0d1b-4516-876d-47f55a346548]
+2017-11-05 12:23:22 TRACE - Created collection wrapper: [generated.TokensEntity.sessionsById#235]
+2017-11-05 12:23:22 TRACE - Created collection wrapper: [generated.TokensEntity.sessionsById_0#235]
+2017-11-05 12:23:22 DEBUG - insert into public.tokens (expired_date) values (?)
+2017-11-05 12:23:22 TRACE - binding parameter [1] as [TIMESTAMP] - [2017-11-09 12:23:17.465]
+2017-11-05 12:23:22 DEBUG - select tokensenti0_.id as id1_1_0_, tokensenti0_.expired_date as expired_2_1_0_, tokensenti0_.value as value3_1_0_ from public.tokens tokensenti0_ where tokensenti0_.id=?
+2017-11-05 12:23:22 TRACE - binding parameter [1] as [BIGINT] - [236]
+2017-11-05 12:23:22 TRACE - extracted value ([expired_2_1_0_] : [TIMESTAMP]) - [2017-11-09 12:23:17.465]
+2017-11-05 12:23:22 TRACE - extracted value ([value3_1_0_] : [OTHER]) - [ef9382d2-8f26-46f5-a130-46f999fdcbc1]
+2017-11-05 12:23:22 TRACE - Created collection wrapper: [generated.TokensEntity.sessionsById#236]
+2017-11-05 12:23:22 TRACE - Created collection wrapper: [generated.TokensEntity.sessionsById_0#236]
+2017-11-05 12:23:22 DEBUG - insert into public.sessions (access_token, refresh_token, user_id) values (?, ?, ?)
+2017-11-05 12:23:22 TRACE - binding parameter [1] as [BIGINT] - [235]
+2017-11-05 12:23:22 TRACE - binding parameter [2] as [BIGINT] - [236]
+2017-11-05 12:23:22 TRACE - binding parameter [3] as [BIGINT] - [1616]
+2017-11-05 12:23:22 DEBUG - update public.tokens set expired_date=? where id=?
+2017-11-05 12:23:22 TRACE - binding parameter [1] as [TIMESTAMP] - [2017-11-05 13:23:17.465]
+2017-11-05 12:23:22 TRACE - binding parameter [2] as [BIGINT] - [235]
+2017-11-05 12:23:22 DEBUG - update public.tokens set expired_date=? where id=?
+2017-11-05 12:23:22 TRACE - binding parameter [1] as [TIMESTAMP] - [2017-11-09 12:23:17.465]
+2017-11-05 12:23:22 TRACE - binding parameter [2] as [BIGINT] - [236]
+2017-11-05 12:23:22 INFO  - First access token:output.Token@69a3d1d
+2017-11-05 12:23:22 INFO  - First refresh token:output.Token@7d70d1b1
+2017-11-05 12:23:22 WARN  - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2017-11-05 12:23:22 DEBUG - select this_.id as id1_1_0_, this_.expired_date as expired_2_1_0_, this_.value as value3_1_0_ from public.tokens this_ where this_.value=?
+2017-11-05 12:23:22 TRACE - binding parameter [1] as [OTHER] - [null]
+2017-11-05 12:23:22 WARN  - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2017-11-05 12:23:22 DEBUG - select this_.id as id1_0_2_, this_.access_token as access_t3_0_2_, this_.refresh_token as refresh_4_0_2_, this_.user_id as user_id2_0_2_, tokensenti2_.id as id1_1_0_, tokensenti2_.expired_date as expired_2_1_0_, tokensenti2_.value as value3_1_0_, tokensenti3_.id as id1_1_1_, tokensenti3_.expired_date as expired_2_1_1_, tokensenti3_.value as value3_1_1_ from public.sessions this_ left outer join public.tokens tokensenti2_ on this_.access_token=tokensenti2_.id left outer join public.tokens tokensenti3_ on this_.refresh_token=tokensenti3_.id where this_.access_token=?
+2017-11-05 12:23:22 TRACE - binding parameter [1] as [BIGINT] - [null]
+2017-11-05 12:25:17 INFO  - HHH000412: Hibernate Core {5.2.11.Final}
+2017-11-05 12:25:17 INFO  - HHH000206: hibernate.properties not found
+2017-11-05 12:25:17 INFO  - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-05 12:25:19 WARN  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-05 12:25:19 INFO  - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/auth]
+2017-11-05 12:25:19 INFO  - HHH10001001: Connection properties: {user=postgres, password=****}
+2017-11-05 12:25:19 INFO  - HHH10001003: Autocommit mode: false
+2017-11-05 12:25:19 INFO  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-05 12:25:19 INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2017-11-05 12:25:19 INFO  - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-11-05 12:25:19 INFO  - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@7ac98b8d
+2017-11-05 12:25:20 WARN  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-05 12:25:20 INFO  - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/auth]
+2017-11-05 12:25:20 INFO  - HHH10001001: Connection properties: {user=postgres, password=****}
+2017-11-05 12:25:20 INFO  - HHH10001003: Autocommit mode: false
+2017-11-05 12:25:20 INFO  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-05 12:25:20 INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2017-11-05 12:25:20 INFO  - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-11-05 12:25:20 INFO  - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@7ac98b8d
+2017-11-05 12:25:20 WARN  - SQL Error: 0, SQLState: 23505
+2017-11-05 12:25:20 ERROR - ОШИБКА: повторяющееся значение ключа нарушает ограничение уникальности "sessions_user_id_key"
+  Подробности: Ключ "(user_id)=(1616)" уже существует.
+2017-11-05 12:25:58 INFO  - First access token:output.Token@69a3d1d
+2017-11-05 12:25:58 INFO  - First refresh token:output.Token@7d70d1b1
+2017-11-05 12:25:58 WARN  - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2017-11-05 12:25:58 WARN  - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2017-11-05 12:30:04 INFO  - First access token:output.Token@660acfb
+2017-11-05 12:30:08 INFO  - First refresh token:output.Token@29f7cefd
+2017-11-05 12:34:14 WARN  - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2017-11-05 12:34:14 WARN  - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2017-11-05 12:36:50 INFO  - HHH000412: Hibernate Core {5.2.11.Final}
+2017-11-05 12:36:51 INFO  - HHH000206: hibernate.properties not found
+2017-11-05 12:36:53 INFO  - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-05 12:37:22 WARN  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-05 12:37:22 INFO  - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/auth]
+2017-11-05 12:37:22 INFO  - HHH10001001: Connection properties: {user=postgres, password=****}
+2017-11-05 12:37:22 INFO  - HHH10001003: Autocommit mode: false
+2017-11-05 12:37:23 INFO  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-05 12:37:23 INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2017-11-05 12:37:26 INFO  - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-11-05 12:37:26 INFO  - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@5f4b5334
+2017-11-05 12:38:33 WARN  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-05 12:38:33 INFO  - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/auth]
+2017-11-05 12:38:33 INFO  - HHH10001001: Connection properties: {user=postgres, password=****}
+2017-11-05 12:38:33 INFO  - HHH10001003: Autocommit mode: false
+2017-11-05 12:38:33 INFO  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-05 12:38:33 INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2017-11-05 12:38:35 INFO  - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-11-05 12:38:35 INFO  - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@5f4b5334
+2017-11-05 12:40:49 WARN  - SQL Error: 0, SQLState: 23505
+2017-11-05 12:40:49 ERROR - ОШИБКА: повторяющееся значение ключа нарушает ограничение уникальности "sessions_user_id_key"
+  Подробности: Ключ "(user_id)=(1616161)" уже существует.
+2017-11-05 12:42:58 INFO  - HHH000412: Hibernate Core {5.2.11.Final}
+2017-11-05 12:42:58 INFO  - HHH000206: hibernate.properties not found
+2017-11-05 12:43:01 INFO  - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-05 12:43:30 WARN  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-05 12:43:30 INFO  - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/auth]
+2017-11-05 12:43:30 INFO  - HHH10001001: Connection properties: {user=postgres, password=****}
+2017-11-05 12:43:30 INFO  - HHH10001003: Autocommit mode: false
+2017-11-05 12:43:30 INFO  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-05 12:43:31 INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2017-11-05 12:43:34 INFO  - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-11-05 12:43:34 INFO  - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@493f121e
+2017-11-05 12:43:55 WARN  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-05 12:43:55 INFO  - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/auth]
+2017-11-05 12:43:55 INFO  - HHH10001001: Connection properties: {user=postgres, password=****}
+2017-11-05 12:43:55 INFO  - HHH10001003: Autocommit mode: false
+2017-11-05 12:43:55 INFO  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-05 12:43:55 INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2017-11-05 12:43:55 INFO  - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-11-05 12:43:55 INFO  - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@493f121e
+2017-11-05 12:43:55 WARN  - SQL Error: 0, SQLState: 23505
+2017-11-05 12:43:55 ERROR - ОШИБКА: повторяющееся значение ключа нарушает ограничение уникальности "sessions_user_id_key"
+  Подробности: Ключ "(user_id)=(1616161)" уже существует.
+2017-11-05 12:46:03 INFO  - HHH000412: Hibernate Core {5.2.11.Final}
+2017-11-05 12:46:03 INFO  - HHH000206: hibernate.properties not found
+2017-11-05 12:46:03 INFO  - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-05 12:46:04 WARN  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-05 12:46:04 INFO  - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/auth]
+2017-11-05 12:46:04 INFO  - HHH10001001: Connection properties: {user=postgres, password=****}
+2017-11-05 12:46:04 INFO  - HHH10001003: Autocommit mode: false
+2017-11-05 12:46:04 INFO  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-05 12:46:04 INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2017-11-05 12:46:05 INFO  - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-11-05 12:46:05 INFO  - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@5a188f23
+2017-11-05 12:46:06 WARN  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-05 12:46:06 INFO  - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/auth]
+2017-11-05 12:46:06 INFO  - HHH10001001: Connection properties: {user=postgres, password=****}
+2017-11-05 12:46:06 INFO  - HHH10001003: Autocommit mode: false
+2017-11-05 12:46:06 INFO  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-05 12:46:06 INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2017-11-05 12:46:06 INFO  - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-11-05 12:46:06 INFO  - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@5a188f23
+2017-11-05 12:46:06 INFO  - First access token:output.Token@69a3d1d
+2017-11-05 12:46:06 INFO  - First refresh token:output.Token@7d70d1b1
+2017-11-05 12:46:40 WARN  - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2017-11-05 12:46:40 WARN  - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2017-11-05 12:50:25 INFO  - HHH000412: Hibernate Core {5.2.11.Final}
+2017-11-05 12:50:25 INFO  - HHH000206: hibernate.properties not found
+2017-11-05 12:50:25 INFO  - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-05 12:50:26 WARN  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-05 12:50:26 INFO  - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/auth]
+2017-11-05 12:50:26 INFO  - HHH10001001: Connection properties: {user=postgres, password=****}
+2017-11-05 12:50:26 INFO  - HHH10001003: Autocommit mode: false
+2017-11-05 12:50:26 INFO  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-05 12:50:26 INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2017-11-05 12:50:26 INFO  - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-11-05 12:50:26 INFO  - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@7ac98b8d
+2017-11-05 12:50:27 WARN  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-05 12:50:27 INFO  - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/auth]
+2017-11-05 12:50:27 INFO  - HHH10001001: Connection properties: {user=postgres, password=****}
+2017-11-05 12:50:27 INFO  - HHH10001003: Autocommit mode: false
+2017-11-05 12:50:27 INFO  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-05 12:50:27 INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2017-11-05 12:50:27 INFO  - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-11-05 12:50:27 INFO  - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@7ac98b8d
+2017-11-05 12:51:02 INFO  - First access token:output.Token@660acfb
+2017-11-05 12:51:03 INFO  - First refresh token:output.Token@29f7cefd
+2017-11-05 12:51:23 WARN  - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2017-11-05 12:51:23 WARN  - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2017-11-05 12:54:22 INFO  - HHH000412: Hibernate Core {5.2.11.Final}
+2017-11-05 12:54:22 INFO  - HHH000206: hibernate.properties not found
+2017-11-05 12:54:25 INFO  - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-05 12:54:54 WARN  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-05 12:54:54 INFO  - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/auth]
+2017-11-05 12:54:54 INFO  - HHH10001001: Connection properties: {user=postgres, password=****}
+2017-11-05 12:54:54 INFO  - HHH10001003: Autocommit mode: false
+2017-11-05 12:54:54 INFO  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-05 12:54:55 INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2017-11-05 12:54:57 INFO  - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-11-05 12:54:57 INFO  - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@193f7e06
+2017-11-05 12:58:38 WARN  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-05 12:58:38 INFO  - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/auth]
+2017-11-05 12:58:38 INFO  - HHH10001001: Connection properties: {user=postgres, password=****}
+2017-11-05 12:58:38 INFO  - HHH10001003: Autocommit mode: false
+2017-11-05 12:58:38 INFO  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-05 12:58:38 INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2017-11-05 12:58:40 INFO  - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-11-05 12:58:40 INFO  - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@193f7e06
+2017-11-05 12:58:56 WARN  - SQL Error: 0, SQLState: 23505
+2017-11-05 12:58:56 ERROR - ОШИБКА: повторяющееся значение ключа нарушает ограничение уникальности "sessions_user_id_key"
+  Подробности: Ключ "(user_id)=(87651)" уже существует.
+2017-11-05 13:01:34 INFO  - First access token:output.Token@660acfb
+2017-11-05 13:01:35 INFO  - First refresh token:output.Token@29f7cefd
+2017-11-05 13:11:28 WARN  - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2017-11-05 13:11:28 WARN  - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2017-11-05 13:12:01 INFO  - HHH000412: Hibernate Core {5.2.11.Final}
+2017-11-05 13:12:01 INFO  - HHH000206: hibernate.properties not found
+2017-11-05 13:12:01 INFO  - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-05 13:12:02 WARN  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-05 13:12:02 INFO  - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/auth]
+2017-11-05 13:12:02 INFO  - HHH10001001: Connection properties: {user=postgres, password=****}
+2017-11-05 13:12:02 INFO  - HHH10001003: Autocommit mode: false
+2017-11-05 13:12:02 INFO  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-05 13:12:02 INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2017-11-05 13:12:02 INFO  - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-11-05 13:12:02 INFO  - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@5d2bcc19
+2017-11-05 13:12:04 WARN  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-05 13:12:04 INFO  - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/auth]
+2017-11-05 13:12:04 INFO  - HHH10001001: Connection properties: {user=postgres, password=****}
+2017-11-05 13:12:04 INFO  - HHH10001003: Autocommit mode: false
+2017-11-05 13:12:04 INFO  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-05 13:12:04 INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2017-11-05 13:12:04 INFO  - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-11-05 13:12:04 INFO  - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@5d2bcc19
+2017-11-05 13:12:04 INFO  - First access token:output.Token@660acfb
+2017-11-05 13:12:04 INFO  - First refresh token:output.Token@29f7cefd
+2017-11-05 13:15:50 WARN  - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2017-11-05 13:15:50 WARN  - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2017-11-05 13:16:42 INFO  - HHH000412: Hibernate Core {5.2.11.Final}
+2017-11-05 13:16:42 INFO  - HHH000206: hibernate.properties not found
+2017-11-05 13:16:42 INFO  - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-05 13:16:44 WARN  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-05 13:16:44 INFO  - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/auth]
+2017-11-05 13:16:44 INFO  - HHH10001001: Connection properties: {user=postgres, password=****}
+2017-11-05 13:16:44 INFO  - HHH10001003: Autocommit mode: false
+2017-11-05 13:16:44 INFO  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-05 13:16:44 INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2017-11-05 13:16:44 INFO  - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-11-05 13:16:44 INFO  - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@2a6622c0
+2017-11-05 13:16:46 WARN  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-05 13:16:46 INFO  - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/auth]
+2017-11-05 13:16:46 INFO  - HHH10001001: Connection properties: {user=postgres, password=****}
+2017-11-05 13:16:46 INFO  - HHH10001003: Autocommit mode: false
+2017-11-05 13:16:46 INFO  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-05 13:16:46 INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2017-11-05 13:16:46 INFO  - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-11-05 13:16:46 INFO  - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@2a6622c0
+2017-11-05 13:16:46 INFO  - First access token:output.Token@660acfb
+2017-11-05 13:16:46 INFO  - First refresh token:output.Token@29f7cefd
+2017-11-05 14:20:43 WARN  - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2017-11-05 14:20:43 WARN  - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2017-11-05 14:21:49 INFO  - HHH000412: Hibernate Core {5.2.11.Final}
+2017-11-05 14:21:49 INFO  - HHH000206: hibernate.properties not found
+2017-11-05 14:21:49 INFO  - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-05 14:21:51 WARN  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-05 14:21:51 INFO  - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/auth]
+2017-11-05 14:21:51 INFO  - HHH10001001: Connection properties: {user=postgres, password=****}
+2017-11-05 14:21:51 INFO  - HHH10001003: Autocommit mode: false
+2017-11-05 14:21:51 INFO  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-05 14:21:51 INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2017-11-05 14:21:51 INFO  - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-11-05 14:21:51 INFO  - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@ea5a563
+2017-11-05 14:21:53 WARN  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-05 14:21:53 INFO  - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/auth]
+2017-11-05 14:21:53 INFO  - HHH10001001: Connection properties: {user=postgres, password=****}
+2017-11-05 14:21:53 INFO  - HHH10001003: Autocommit mode: false
+2017-11-05 14:21:53 INFO  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-05 14:21:53 INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2017-11-05 14:21:53 INFO  - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-11-05 14:21:53 INFO  - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@ea5a563
+2017-11-05 14:21:53 INFO  - First access token:output.Token@660acfb
+2017-11-05 14:21:53 INFO  - First refresh token:output.Token@29f7cefd
+2017-11-05 19:34:52 WARN  - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2017-11-05 19:34:52 WARN  - SQL Error: 0, SQLState: 08006
+2017-11-05 19:34:52 ERROR - Ошибка ввода/ввывода при отправке бэкенду.
+2017-11-05 19:34:52 WARN  - SQL Error: 0, SQLState: 08003
+2017-11-05 19:34:52 ERROR - This connection has been closed.
+2017-11-05 19:34:53 WARN  - SQL Error: 0, SQLState: 08004
+2017-11-05 19:34:53 ERROR - Подсоединение отклонено. Проверьте что хост и порт указаны правильно и что postmaster принимает TCP/IP-подсоединения.
+2017-11-05 19:38:02 INFO  - HHH000412: Hibernate Core {5.2.11.Final}
+2017-11-05 19:38:02 INFO  - HHH000206: hibernate.properties not found
+2017-11-05 19:38:02 INFO  - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-05 19:38:03 WARN  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-05 19:38:03 INFO  - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/auth]
+2017-11-05 19:38:03 INFO  - HHH10001001: Connection properties: {user=postgres, password=****}
+2017-11-05 19:38:03 INFO  - HHH10001003: Autocommit mode: false
+2017-11-05 19:38:03 INFO  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-05 19:39:21 INFO  - HHH000412: Hibernate Core {5.2.11.Final}
+2017-11-05 19:39:21 INFO  - HHH000206: hibernate.properties not found
+2017-11-05 19:39:21 INFO  - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-05 19:39:23 WARN  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-05 19:39:23 INFO  - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/auth]
+2017-11-05 19:39:23 INFO  - HHH10001001: Connection properties: {user=postgres, password=****}
+2017-11-05 19:39:23 INFO  - HHH10001003: Autocommit mode: false
+2017-11-05 19:39:23 INFO  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-05 19:39:23 INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2017-11-05 19:39:24 INFO  - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-11-05 19:39:24 INFO  - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@1dde4528
+2017-11-05 19:39:26 WARN  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-05 19:39:26 INFO  - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/auth]
+2017-11-05 19:39:26 INFO  - HHH10001001: Connection properties: {user=postgres, password=****}
+2017-11-05 19:39:26 INFO  - HHH10001003: Autocommit mode: false
+2017-11-05 19:39:26 INFO  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-05 19:39:26 INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2017-11-05 19:39:26 INFO  - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-11-05 19:39:26 INFO  - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@1dde4528
+2017-11-05 19:39:26 INFO  - First access token:output.Token@660acfb
+2017-11-05 19:39:26 INFO  - First refresh token:output.Token@29f7cefd
+2017-11-05 19:42:41 INFO  - HHH000412: Hibernate Core {5.2.11.Final}
+2017-11-05 19:42:41 INFO  - HHH000206: hibernate.properties not found
+2017-11-05 19:42:41 INFO  - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-05 19:42:43 WARN  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-05 19:42:43 INFO  - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/auth]
+2017-11-05 19:42:43 INFO  - HHH10001001: Connection properties: {user=postgres, password=****}
+2017-11-05 19:42:43 INFO  - HHH10001003: Autocommit mode: false
+2017-11-05 19:42:43 INFO  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-05 19:42:43 INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2017-11-05 19:42:43 INFO  - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-11-05 19:42:43 INFO  - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@7ac98b8d
+2017-11-05 19:42:45 WARN  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-05 19:42:45 INFO  - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/auth]
+2017-11-05 19:42:45 INFO  - HHH10001001: Connection properties: {user=postgres, password=****}
+2017-11-05 19:42:45 INFO  - HHH10001003: Autocommit mode: false
+2017-11-05 19:42:45 INFO  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-05 19:42:45 INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2017-11-05 19:42:45 INFO  - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-11-05 19:42:45 INFO  - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@7ac98b8d
+2017-11-05 19:42:45 INFO  - First access token:a86f1b85-1684-4272-812e-9d321c7def7f
+2017-11-05 19:42:45 INFO  - First refresh token:1b9bb8c0-abf1-47ad-b792-be4fdd43115a
+2017-11-05 19:42:45 WARN  - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2017-11-05 19:42:45 WARN  - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2017-11-05 19:42:45 INFO  - Second access token:a3d6f3f8-7009-47ab-806f-00c346be175b
+2017-11-05 19:42:45 INFO  - Second refresh token:1bfe480e-fdbc-492d-9535-7a72d3a3051c
+2017-11-05 19:42:45 WARN  - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2017-11-05 19:42:45 WARN  - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2017-11-05 19:43:25 INFO  - HHH000412: Hibernate Core {5.2.11.Final}
+2017-11-05 19:43:25 INFO  - HHH000206: hibernate.properties not found
+2017-11-05 19:43:26 INFO  - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-05 19:43:27 WARN  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-05 19:43:27 INFO  - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/auth]
+2017-11-05 19:43:27 INFO  - HHH10001001: Connection properties: {user=postgres, password=****}
+2017-11-05 19:43:27 INFO  - HHH10001003: Autocommit mode: false
+2017-11-05 19:43:27 INFO  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-05 19:43:27 INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2017-11-05 19:43:27 INFO  - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-11-05 19:43:27 INFO  - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@ea5a563
+2017-11-05 19:43:29 WARN  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-05 19:43:29 INFO  - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/auth]
+2017-11-05 19:43:29 INFO  - HHH10001001: Connection properties: {user=postgres, password=****}
+2017-11-05 19:43:29 INFO  - HHH10001003: Autocommit mode: false
+2017-11-05 19:43:29 INFO  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-05 19:43:29 INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2017-11-05 19:43:29 INFO  - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-11-05 19:43:29 INFO  - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@ea5a563
+2017-11-05 19:43:29 INFO  - First access token:bd0714a9-525e-4222-8203-78dfd002516d
+2017-11-05 19:43:29 INFO  - First refresh token:b09f84f4-1377-4a92-ae09-b118f0c682b7
+2017-11-05 19:43:37 WARN  - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2017-11-05 19:43:37 WARN  - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2017-11-05 19:43:37 INFO  - Second access token:2b5a7335-8c6a-453f-a077-eb562f5861c0
+2017-11-05 19:43:37 INFO  - Second refresh token:0d1a1a8b-7131-4f75-8b30-f402003abd64
+2017-11-05 19:44:01 WARN  - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2017-11-05 19:45:25 WARN  - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2017-11-05 19:45:35 INFO  - HHH000412: Hibernate Core {5.2.11.Final}
+2017-11-05 19:45:35 INFO  - HHH000206: hibernate.properties not found
+2017-11-05 19:45:35 INFO  - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-05 19:45:37 WARN  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-05 19:45:37 INFO  - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/auth]
+2017-11-05 19:45:37 INFO  - HHH10001001: Connection properties: {user=postgres, password=****}
+2017-11-05 19:45:37 INFO  - HHH10001003: Autocommit mode: false
+2017-11-05 19:45:37 INFO  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-05 19:45:37 INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2017-11-05 19:45:37 INFO  - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-11-05 19:45:37 INFO  - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@ea5a563
+2017-11-05 19:45:39 WARN  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-05 19:45:39 INFO  - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/auth]
+2017-11-05 19:45:39 INFO  - HHH10001001: Connection properties: {user=postgres, password=****}
+2017-11-05 19:45:39 INFO  - HHH10001003: Autocommit mode: false
+2017-11-05 19:45:39 INFO  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-05 19:45:39 INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2017-11-05 19:45:39 INFO  - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-11-05 19:45:39 INFO  - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@ea5a563
+2017-11-05 19:45:39 INFO  - First access token:f749770b-febd-45b5-aaa0-d73db432675d
+2017-11-05 19:45:39 INFO  - First refresh token:a3f9a2b3-df07-4188-a40b-34565bc0895a
+2017-11-05 19:45:39 WARN  - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2017-11-05 19:45:39 WARN  - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2017-11-05 19:54:05 INFO  - Second access token:32fcf83b-e0fd-479a-a54a-97f131f179fb
+2017-11-05 19:54:05 INFO  - Second refresh token:a385a973-ceab-444b-8b74-93f55c8946f3
+2017-11-05 19:56:32 WARN  - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2017-11-05 19:57:18 WARN  - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2017-11-05 19:57:18 INFO  - First access token:37cdf1ef-58f2-44a7-85e3-f6e10bad6543
+2017-11-05 19:57:18 INFO  - First refresh token:f438de87-6fc8-4ecd-b682-0a149d488e15
+2017-11-05 19:57:18 WARN  - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2017-11-05 19:57:18 WARN  - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2017-11-05 19:57:29 INFO  - Second access token:fe9858e2-84b2-43b7-958b-a4770b7b2ddc
+2017-11-05 19:57:29 INFO  - Second refresh token:89d2e09c-3fe5-41d2-8e58-e3ae83854e36
+2017-11-05 19:57:34 WARN  - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2017-11-05 19:57:34 WARN  - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2017-11-05 20:01:41 INFO  - HHH000412: Hibernate Core {5.2.11.Final}
+2017-11-05 20:01:41 INFO  - HHH000206: hibernate.properties not found
+2017-11-05 20:01:41 INFO  - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-05 20:01:43 WARN  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-05 20:01:43 INFO  - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/auth]
+2017-11-05 20:01:43 INFO  - HHH10001001: Connection properties: {user=postgres, password=****}
+2017-11-05 20:01:43 INFO  - HHH10001003: Autocommit mode: false
+2017-11-05 20:01:43 INFO  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-05 20:01:43 INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2017-11-05 20:01:43 INFO  - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-11-05 20:01:43 INFO  - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@3b0e6568
+2017-11-05 20:01:44 WARN  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-05 20:01:44 INFO  - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/auth]
+2017-11-05 20:01:44 INFO  - HHH10001001: Connection properties: {user=postgres, password=****}
+2017-11-05 20:01:44 INFO  - HHH10001003: Autocommit mode: false
+2017-11-05 20:01:44 INFO  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-05 20:01:45 INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2017-11-05 20:01:45 INFO  - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-11-05 20:01:45 INFO  - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@3b0e6568
+2017-11-05 20:01:45 INFO  - First access token:fc6ed297-dfa6-4b21-aebf-48145bb1a480
+2017-11-05 20:01:45 INFO  - First refresh token:d23f6432-b793-4236-a4e2-2e1c0dd7e745
+2017-11-05 20:01:45 WARN  - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2017-11-05 20:01:45 WARN  - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2017-11-05 20:01:54 INFO  - Second access token:7aa8f903-c962-4fe4-8d84-fba78ce0fc71
+2017-11-05 20:01:54 INFO  - Second refresh token:1dd13785-aa14-4c27-b3cc-aa657daf1c31
+2017-11-05 20:02:14 INFO  - HHH000412: Hibernate Core {5.2.11.Final}
+2017-11-05 20:02:14 INFO  - HHH000206: hibernate.properties not found
+2017-11-05 20:02:14 INFO  - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-05 20:02:16 WARN  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-05 20:02:16 INFO  - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/auth]
+2017-11-05 20:02:16 INFO  - HHH10001001: Connection properties: {user=postgres, password=****}
+2017-11-05 20:02:16 INFO  - HHH10001003: Autocommit mode: false
+2017-11-05 20:02:16 INFO  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-05 20:02:16 INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2017-11-05 20:02:16 INFO  - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-11-05 20:02:16 INFO  - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@13b30140
+2017-11-05 20:02:18 WARN  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-05 20:02:18 INFO  - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/auth]
+2017-11-05 20:02:18 INFO  - HHH10001001: Connection properties: {user=postgres, password=****}
+2017-11-05 20:02:18 INFO  - HHH10001003: Autocommit mode: false
+2017-11-05 20:02:18 INFO  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-05 20:02:18 INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2017-11-05 20:02:18 INFO  - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-11-05 20:02:18 INFO  - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@13b30140
+2017-11-05 20:02:18 INFO  - First access token:1e9f14ea-bded-4c1a-9d63-3bfad97c4d28
+2017-11-05 20:02:18 INFO  - First refresh token:40e0820e-85eb-4a22-bc31-c65ece8d89d2
+2017-11-05 20:02:30 WARN  - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2017-11-05 20:02:30 WARN  - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2017-11-06 11:56:55 INFO  - HHH000412: Hibernate Core {5.2.11.Final}
+2017-11-06 11:56:55 INFO  - HHH000206: hibernate.properties not found
+2017-11-06 11:56:57 INFO  - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-06 11:57:07 WARN  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-06 11:57:07 INFO  - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/auth]
+2017-11-06 11:57:07 INFO  - HHH10001001: Connection properties: {user=postgres, password=****}
+2017-11-06 11:57:07 INFO  - HHH10001003: Autocommit mode: false
+2017-11-06 11:57:07 INFO  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-06 11:57:08 INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2017-11-06 11:57:10 INFO  - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-11-06 11:57:10 INFO  - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@5b6646b6
+2017-11-06 11:57:22 WARN  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-06 11:57:22 INFO  - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/auth]
+2017-11-06 11:57:22 INFO  - HHH10001001: Connection properties: {user=postgres, password=****}
+2017-11-06 11:57:22 INFO  - HHH10001003: Autocommit mode: false
+2017-11-06 11:57:22 INFO  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-06 11:57:22 INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2017-11-06 11:57:22 INFO  - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-11-06 11:57:22 INFO  - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@5b6646b6
+2017-11-06 11:57:23 INFO  - First access token:841a8ce1-d1ed-4887-bdf4-81afa15e0077
+2017-11-06 11:57:23 INFO  - First refresh token:f1abe8ac-6207-468a-9fe0-0df4ae8f54aa
+2017-11-06 12:02:53 WARN  - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2017-11-06 12:02:53 WARN  - SQL Error: 0, SQLState: 08006
+2017-11-06 12:02:53 ERROR - Ошибка ввода/ввывода при отправке бэкенду.
+2017-11-06 12:02:53 WARN  - SQL Error: 0, SQLState: 08003
+2017-11-06 12:02:53 ERROR - This connection has been closed.
+2017-11-06 12:03:09 WARN  - SQL Error: 0, SQLState: 08004
+2017-11-06 12:03:09 ERROR - Подсоединение отклонено. Проверьте что хост и порт указаны правильно и что postmaster принимает TCP/IP-подсоединения.
+2017-11-06 12:07:33 INFO  - HHH000412: Hibernate Core {5.2.11.Final}
+2017-11-06 12:07:33 INFO  - HHH000206: hibernate.properties not found
+2017-11-06 12:07:35 INFO  - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-06 12:07:48 WARN  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-06 12:07:48 INFO  - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/auth]
+2017-11-06 12:07:48 INFO  - HHH10001001: Connection properties: {user=postgres, password=****}
+2017-11-06 12:07:48 INFO  - HHH10001003: Autocommit mode: false
+2017-11-06 12:07:48 INFO  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-06 12:07:49 INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2017-11-06 12:07:50 INFO  - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-11-06 12:07:50 INFO  - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@5a188f23
+2017-11-06 12:08:02 WARN  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-06 12:08:02 INFO  - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/auth]
+2017-11-06 12:08:02 INFO  - HHH10001001: Connection properties: {user=postgres, password=****}
+2017-11-06 12:08:02 INFO  - HHH10001003: Autocommit mode: false
+2017-11-06 12:08:02 INFO  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-06 12:08:02 INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2017-11-06 12:08:02 INFO  - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-11-06 12:08:02 INFO  - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@5a188f23
+2017-11-06 12:08:03 INFO  - First access token:7e8ba255-b835-4da8-8ccd-62e62ea6dfbd
+2017-11-06 12:08:03 INFO  - First refresh token:61ea03a6-7a89-4bf7-8863-d33bec515997
+2017-11-06 12:08:49 WARN  - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2017-11-06 12:08:49 WARN  - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2017-11-06 12:35:00 INFO  - Second access token:a8a570d9-e6f5-4f52-85be-12cbced3c16f
+2017-11-06 12:35:02 INFO  - Second refresh token:09039a6f-a7f8-422f-ac80-1a5ffcbdb3c9
+2017-11-06 12:35:37 WARN  - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2017-11-06 12:40:32 WARN  - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2017-11-06 12:41:28 INFO  - HHH000412: Hibernate Core {5.2.11.Final}
+2017-11-06 12:41:29 INFO  - HHH000206: hibernate.properties not found
+2017-11-06 12:41:31 INFO  - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-06 12:41:41 WARN  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-06 12:41:41 INFO  - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/auth]
+2017-11-06 12:41:41 INFO  - HHH10001001: Connection properties: {user=postgres, password=****}
+2017-11-06 12:41:41 INFO  - HHH10001003: Autocommit mode: false
+2017-11-06 12:41:41 INFO  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-06 12:41:42 INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2017-11-06 12:41:44 INFO  - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-11-06 12:41:44 INFO  - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@69571dfb
+2017-11-06 12:41:57 WARN  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-06 12:41:57 INFO  - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/auth]
+2017-11-06 12:41:57 INFO  - HHH10001001: Connection properties: {user=postgres, password=****}
+2017-11-06 12:41:57 INFO  - HHH10001003: Autocommit mode: false
+2017-11-06 12:41:57 INFO  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-06 12:41:57 INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2017-11-06 12:41:57 INFO  - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-11-06 12:41:57 INFO  - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@69571dfb
+2017-11-06 12:41:58 INFO  - First access token:77e39ef2-0511-4972-9b13-8ef62706f618
+2017-11-06 12:41:58 INFO  - First refresh token:94091376-1fcc-46c2-be53-cd934bffa6fb
+2017-11-06 12:42:10 WARN  - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2017-11-06 12:42:10 WARN  - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2017-11-06 12:46:50 INFO  - Second access token:6d6f5d48-fe5f-4cd8-ae11-805194532746
+2017-11-06 12:46:50 INFO  - Second refresh token:dd67e3ce-2c54-4c63-8664-8eb233c384e7
+2017-11-06 12:49:54 INFO  - HHH000412: Hibernate Core {5.2.11.Final}
+2017-11-06 12:49:54 INFO  - HHH000206: hibernate.properties not found
+2017-11-06 12:49:55 INFO  - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-06 12:49:57 WARN  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-06 12:49:57 INFO  - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/auth]
+2017-11-06 12:49:57 INFO  - HHH10001001: Connection properties: {user=postgres, password=****}
+2017-11-06 12:49:57 INFO  - HHH10001003: Autocommit mode: false
+2017-11-06 12:49:57 INFO  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-06 12:49:57 INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2017-11-06 12:49:57 INFO  - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-11-06 12:49:57 INFO  - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@2fa43073
+2017-11-06 12:49:59 WARN  - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-06 12:49:59 INFO  - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/auth]
+2017-11-06 12:49:59 INFO  - HHH10001001: Connection properties: {user=postgres, password=****}
+2017-11-06 12:49:59 INFO  - HHH10001003: Autocommit mode: false
+2017-11-06 12:49:59 INFO  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-06 12:49:59 INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+2017-11-06 12:49:59 INFO  - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-11-06 12:49:59 INFO  - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@2fa43073
+2017-11-06 12:49:59 INFO  - First access token:8569a021-72fc-4bca-9608-33ac6f7693ac
+2017-11-06 12:49:59 INFO  - First refresh token:6fcea9e1-5b53-4a4e-88d3-2860551357c7
+2017-11-06 12:49:59 WARN  - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2017-11-06 12:49:59 WARN  - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2017-11-06 12:49:59 INFO  - Second access token:ddf2458d-6dbe-420d-a214-9d2eddceceb1
+2017-11-06 12:49:59 INFO  - Second refresh token:cb4c43b7-1580-49fd-9e07-ab670be4ddda
+2017-11-06 12:49:59 WARN  - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2017-11-06 12:49:59 WARN  - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2017-11-06 12:49:59 INFO  - Third access token:fd106c91-b63c-476d-afa6-1388f98bb476
+2017-11-06 12:49:59 INFO  - Third refresh token:88a95ef6-5b17-41ab-8a55-9bf109cb9c56
+2017-11-06 12:49:59 WARN  - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead

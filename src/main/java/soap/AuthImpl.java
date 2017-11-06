@@ -1,24 +1,37 @@
-package database;
+package soap;
 
 import java.sql.Timestamp;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
 import java.util.UUID;
+
 import generated.SessionsEntity;
 import generated.TokensEntity;
+
+import soap.Answer;
+import javax.jws.WebMethod;
+import javax.jws.WebParam;
+import javax.jws.WebService;
+import javax.jws.soap.SOAPBinding;
+import javax.xml.bind.annotation.XmlSeeAlso;
 
 import static database.DBClient.*;
 
 /**
  * Created by Meyttt on 27.10.2017.
  */
-public class AuthOperator {
-    public Answer makeToken(Long userId){
+@WebService
+@SOAPBinding
+@XmlSeeAlso({UUID.class, soap.Answer.class,Long.class, Token.class})
+public class AuthImpl implements Auth{
+    @Override
+    @WebMethod
+    public Answer makeToken(@WebParam(name = "userId") Long userId){
         Date date = new Date();
         TokensEntity accessToken= new TokensEntity(changeDateHour(date,1));
         saveOrUpd(accessToken);
-        accessToken=DBClient.refresh(accessToken);
+        accessToken= DBClient.refresh(accessToken);
         System.out.println("Generated access token id: "+accessToken.getId());
         TokensEntity refreshToken= new TokensEntity(changeDate(date,4));
         saveOrUpd(refreshToken);
@@ -29,14 +42,19 @@ public class AuthOperator {
         saveOrUpd(sessionsEntity);
         return new Answer(new Token(accessToken), new Token(refreshToken),null);
     }
-    public Answer refresh(UUID refreshUUID){
+    @Override
+    @WebMethod
+    public Answer refresh(@WebParam(name = "refreshToken") UUID refreshUUID){
         SessionsEntity sessionsEntity=getSessionByRefresh(refreshUUID);
         return generateAnswer(sessionsEntity);
     }
-    public Answer auth(UUID uuid){
+    @Override
+    @WebMethod
+    public Answer auth(@WebParam(name = "authToken") UUID uuid){
         SessionsEntity sessionsEntity=getSessionByAccess(uuid);
         return generateAnswer(sessionsEntity);
     }
+
 
     private Answer generateAnswer(SessionsEntity sessionsEntity){
         if (sessionsEntity!=null&&sessionsEntity.getUserId()!=null){
@@ -44,11 +62,11 @@ public class AuthOperator {
             TokensEntity oldRefr=sessionsEntity.getRefreshToken();
             TokensEntity olAcc=sessionsEntity.getAccessToken();
             TokensEntity accessToken= new TokensEntity(changeDateHour(date,1));
-            saveOb(accessToken);
+            saveOrUpd(accessToken);
             accessToken=DBClient.refresh(accessToken);
             System.out.println("Generated access token id: "+accessToken.getId());
             TokensEntity refreshToken= new TokensEntity(changeDate(date,4));
-            saveOb(refreshToken);
+            saveOrUpd(refreshToken);
             refreshToken=DBClient.refresh(refreshToken);
             System.out.println("Generated refresh token id: "+refreshToken.getId());
             sessionsEntity.setAccessToken(accessToken);
@@ -65,7 +83,9 @@ public class AuthOperator {
         return readByColumn("userId",userId,SessionsEntity.class);
 
     }
-    public Answer logout(Long userId){
+    @Override
+    @WebMethod
+    public Answer logout(@WebParam(name = "userId") Long userId){
         SessionsEntity sessionsEntity= readByColumn("userId",userId,SessionsEntity.class);
         if (sessionsEntity!=null){
             delete(sessionsEntity);
@@ -113,8 +133,8 @@ public class AuthOperator {
     }
 
     public static void main(String[] args) {
-        AuthOperator authOperator= new AuthOperator();
-        authOperator.makeToken(Long.valueOf(12));
+        AuthImpl authImpl = new AuthImpl();
+        authImpl.makeToken(Long.valueOf(12));
     }
 
 
